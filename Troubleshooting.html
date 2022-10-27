@@ -1,0 +1,162 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>EZ Troubleshooting Guides</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div id="main" class="card">
+          <div class="card-content">
+            <span class="card-title">Ian's Troubleshooting Guides</span>
+			<a href="index.html">Go Back Home</a>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+<div class="container">
+          <div class="card-action">
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Easy Network Troubleshooting
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+		<b><i>Easy Network Troubleshooting</b></i><br><br>
+		1. Press `Win` + `R` on your keyboard<br>
+		2. Type `cmd` on the Run window that just popped up then press `Ok`<br>
+		3. Enter the following commands one by one:<br>
+		<blockquote>ipconfig /release<br>
+		ipconfig /renew<br>
+		ipconfig /flushdns</blockquote>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960877511712075798/960881835376779384/EZ_Network_Troubleshoot.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          How to check Ping
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+		1. Launch a <i>Command Prompt</i> window (CMD)<br>
+		2. Enter the command: `ping -t website.com` <i>(Replace website.com with a website/address you wanna check)</i><br>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960877511712075798/965515352924618782/Check_Ping.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+	  </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          How to change DNS (Windows)
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+		1. Open `Control Panel`
+		2. Select `Network and Internet`
+		3. Select `Network and Sharing Center`
+		4. Select `Change adapter settings`
+		5. Right click your connection adapter and select `Properties`
+		6. Locate `Internet Protocol Version 4 (TCP/IPv4)` then select `Properties`
+		7. Check `Use the following DNS Server Addresses:`
+		8. Input your preferred DNS Servers and Press `OK`
+		9. Locate `Internet Protocol Version 6 (TCP/IPv6)` then select `Properties`
+		10. Check `Use the following DNS Server Addresses:`
+		11. Input your preferred DNS Servers<br><br>
+		Recommended DNS Servers:
+			<blockquote><b>Cloudflare DNS</b><br>
+			<i>IPv4:</i><br>
+			1.1.1.1<br>
+			1.0.0.1<br>
+			<i>IPv6:</i><br>
+			2606:4700:4700::1111<br>
+			2606:4700:4700::1001<br></blockquote>
+			<blockquote><b>Google DNS</b><br>
+			<i>IPv4:</i><br>
+			8.8.8.8<br>
+			8.8.4.4<br>
+			<i>IPv6:</i><br>
+			2001:4860:4860::8888<br>
+			2001:4860:4860::8844<br></blockquote>
+			<blockquote><b>AdGuard DNS (with AdBlock)</b><br>
+			<i>IPv4:</i><br>
+			94.140.14.14<br>
+			94.140.15.15<br>
+			<i>IPv6:</i><br>
+			2a10:50c0::ad1:ff<br>
+			2a10:50c0::ad2:ff<br></blockquote>
+			<blockquote><b>AdGuard DNS (w/o AdBlock)</b><br>
+			<i>IPv4:</i><br>
+			94.140.14.140<br>
+			94.140.14.141<br>
+			<i>IPv6:</i><br>
+			2a10:50c0::1:ff<br>
+			2a10:50c0::2:ff<br></blockquote>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960877511712075798/966183677644132382/Windows_Change_DNS.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          How to check your PC Specs
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+		1. Press `Win` + `R` on your keyboard<br>
+		2. Type and Enter `msinfo32`<br>
+		4. In the `System Summary` Tab you'll find info on:<br>
+			<blockquote>• OS  • Operating System  • Processor  • Motherboard  • RAM  • ETC</blockquote>
+		5. In `Components -> Display` Tab you'll find your `GPU` information<br>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960877511712075798/966282608726126632/How_to_check_PC_Specs.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://discord.com/api/guilds/644181172485619742/widget.json"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<body>
+</html>
+

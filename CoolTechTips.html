@@ -23,30 +23,278 @@
 </div>
 <div class="container">
           <div class="card-action">
-            <h5 id="task-title">(I'm) Stuffs</h5>
-            <ul class="collection">
-			<li class="collection-item">
-			<h5 id="task-title">Cool Tech Tips</h5>
-<widgetbot
-    server="644181172485619742"
-    channel="960872551398129725"
-	id="embed"
-    width="100%"
-    height="600px"
-></widgetbot>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-</li>
-			<li class="collection-item">
-			<h5 id="task-title">Troubleshooting</h5>
-<widgetbot
-    server="644181172485619742"
-    channel="960877511712075798"
-	id="embed"
-    width="100%"
-    height="600px"
-></widgetbot>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-</li>
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Web Select
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+		<i>Disclaimer!: You need to be on MS Edge v100 and above</i><br>
+		1.  Press `Ctrl` + `Shift` + `X` on a webpage<br>
+		2. Highlight the text you want copied<br>
+		3. Paste in Microsoft Word / anywhere<br>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960872551398129725/960882974713315328/MS_Edge_Web_Select.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Clipboard history
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+		1. Press `Win` + `V`<br>
+		2. Click on `Turn On` to enable Clipboard history<br>
+		3. Next time you press `Win` + `V`, you'll have your clipboard history!<br>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960872551398129725/960892651165593680/Clipboard_History.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+	  </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Compressing with HandBrake
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+		1. Download and Install `HandBrake` from <a href="https://handbrake.fr/" target="_blank">https://handbrake.fr/</a><br>
+		2. Run `HandBrake`<br>
+		<b><i>Configuring HandBrake default settings</i></b><br>
+		1. Select Preferences upon launching HandBrake (Or go to `Tools`->`Preferences`<br>
+		2.  Select `Output Files`<br>
+		3. Set `Default Path` to `{source_path}`<br>
+		4. Set `File Format` to `{source}`<br>
+		5. Change `MP4 File Extension` to `Always Use MP4`<br>
+		<b><i>HandBrake Main Toolbar</i></b><br>
+		1. In the `Preset` Selection Menu choose `Fast 1080p30` or `Fast 720p30` depending on how much storage you wanna save<br>
+		<b><i>HandBrake Video Tab</i></b><br>
+		1. Change `Framerate(FPS)` to `Same as Source`<br>
+		<i>If you wanna save more space set FPS to 24 or 30</i><br>
+		2. Set `Constant Quality` to 25<br>
+		<i>Higher Constant Quality = Higher Video Quality</i><br>
+		<b><i>Handbrake Audio Tab</i></b><br>
+		<i>It's safe to leave this tab without changing anything</i><br>
+		1. If you want to use the same audio set `Codec` to `X Passthru`<br>
+		<i>X = The Audio codec of your video</i><br>
+		2. To save even more space, lower the `Bitrate`<br>
+		<b><i>Finalization</i></b><br>
+		1. Set your file's name with the `Save As` bar located at the bottom of HandBrake<br>
+		2. When you are satisfied with the settings click on `Start Encode` (The one with a green play button)<br>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960872551398129725/968094453543890944/HandBrake.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          qBittorrent's Search Engine Feature
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+		1. Open your browser<br>
+		2. Go to <a href="http://qbittorrent.org" target="_blank">http://qbittorrent.org</a><br>
+		3. Click on `Download`<br>
+		4. Select on the <b>Stable Version</b> download link<br>
+		5. Select the qBittorrent installer that matches with your <b>Operating System</b><br>
+		6. Launch the installer you've just downloaded<br>
+		7. Install qBittorrent<br>
+		<b><i>Setting up qBittorrent pt.1</b></i><br>
+		0. On the first launch of the program you have to click on `I Agree`<br>
+		1. Click on `View` located at the top left of the qBittorrent window<br>
+		2. Then select `Search Engine`<br>
+		2.a. If you do not have Python installed, it will prompt you to install, click on `Yes`<br>
+		2.b. Wait for Python to finish installing<br>
+		3. Click on the `Search` Tab that just appeared<br>
+		4. Click on `Search Plugins` located at the bottom right of the qBittorrent window<br>
+		5. Click on `Check for Updates`<br>
+		<b><i>[OPTIONAL BUT RECOMMENDED]</b></i><br>
+		a. Right click on `The Pirate Bay` search plugin<br>
+		b. Click on `Uninstall`<br>
+		6. Click on <a href="http://plugins.qbittorrent.org" target="_blank">http://plugins.qbittorrent.org</a><br>
+		<b><i>Setting up qBittorrent pt.2</b></i><br>
+		7. On the website that just opened, look for any search engine you are interested in<br>
+		8. Right click on the download icon (Located under the 🔗 column)<br>
+		9. Click on `Copy Link`<br>
+		10. Go back to qBittorrent and select `Install a new one`<br>
+		11. Click on `Web link`<br>
+		12. Paste the link you just copied and press `OK`<br>
+		13. You can now close the `Search plugins` window<br>
+		<b><i>Searching for torrents within qBittorrent</b></i><br>
+		1. Open the `Search` Tab<br>
+		2. Type for the program/movie/music/etc you want to torrent and press enter<br>
+		3. Wait for search results to come up<br>
+		4. Double click on a result that you want to download<br>
+		5. The torrent's information will show up, you can press `OK`<br>
+		6. Click on the `Transfers` tab to see the progress of your download<br>
+		7. <i>Enjoy torrenting!</i><br>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960872551398129725/997843640795799714/TorrentingTutorial.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Ninite Setup
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+      <div class="card-body">
+		1. Go to <a href="https://ninite.com/" target="_blank">ninite.com</a><br>
+		2. Scroll down and select the programs you want<br><br>
+		<b><i>Recommended:</b></i><br>
+		<blockquote>
+		Browser of your choice (Chrome/Edge/Firefox)<br>
+		Discord<br>
+		Notepad<br>
+		VLC<br>
+		Audacity<br>
+		Handbrake<br>
+		WinDirStat<br>
+		Glary Utilities<br>
+		qBittorrent<br>
+		7-Zip<br>
+		.NET Desktop Runtime 6<br></blockquote>
+		<b><i>Optional</b></i><br>
+		<blockquote>Steam<br>
+		Spotify<br>
+		Google Drive for Desktop<br></blockquote>
+		3. Scroll down and click "Get your Ninite" to get your installer<br>
+		4. Run the downloaded installer<br>
+		5. Wait for Ninite to finish<br>
+		6. Enjoy!<br>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960872551398129725/998154701960908861/NiniteTutorial.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingSix">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Recommended Browser Extensions
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+      <div class="card-body">
+		<b><i>Install these recommended Browser Extensions!</b></i><br>
+		• uBlock Origin - <a href="https://ublockorigin.com/" target="_blank">https://ublockorigin.com/</a><br>
+		• FastForward - <a href="https://fastforward.team/" target="_blank">https://fastforward.team/</a><br><br>
+		<b><i>uBlock Origin recommended settings</b></i><br>
+		Enable these from the Filter Lists tab:<br>
+		<blockquote>AdGuard Annoyances<br>
+		AdGuard Social Media<br>
+		uBlock filters - Annoyances</blockquote>
+		<b><i>FastForward recommended Settings</b></i><br>
+		Check these options and set the values (follow the bolded numbers):<br>
+		<blockquote>Open crowd-sourced destinations in a new tab after <b><i>1</b></i> second(s).<br>
+		Close tab containing the crowd-sourced destination after <b><i>3</b></i> second(s) of visiting it.</blockquote>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960872551398129725/998155549134815262/BrowserExtensions.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingSeven">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          YT-DLP Setup
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+      <div class="card-body">
+		1. Head to this link: <a href="https://bit.ly/Ian_YTDLP" target="_blank">bit.ly/Ian_YTDLP</a><br>
+		2. Press the `⬇️ Download` button to download all the files from Dropbox<br>
+		3. Extract the files on your desktop<br>
+		4. Open the `yt-dlp-bin.zip` and copy its contents to `C:\`<br>
+		5. Move the  `yt-dlp scripts` folder to somewhere that's easy to remember/find<br>
+		6. Press `[Start]` or 🪟 on your Keyboard and search for `Environment`<br>
+		7. Click on `Edit the system environment variables`<br>
+		8. Select `Environment Variables` on the window that just popped up<br>
+		9. Now on the new window, select `Path` then click on `Edit...`<br>
+		10. Click on `New` and type in `C:\bin`<br>
+		11. Exit out all the windows<br>
+		12. Navigate to the folder where you extracted the scripts<br>
+		13. Run the `YT-DLP Update.bat` to make sure the files are up to date<br>
+		14. Now you can run any script you'd like then paste the link of the video then press `Enter`<br>
+		15. Your video will be located the `Downloads` folder inside your scripts folder!<br>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960872551398129725/1034414636658864128/YT-DLPTutorial.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingEight">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          How to download a playlist from the YouTube Premium* account
+        </button>
+      </h5>
+    </div>
+    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+      <div class="card-body">
+		<b><i>⚠️You need to follow the YT-DLP tutorial first before doing this⚠️</b></i><br><br>
+		1. Go to the playlist you'd like downloaded<br>
+		2. If there is a warning that says `Unavailable videos are hidden`<br>
+			 2a. Click on the "Kebab" button (The 3 vertical dots button)<br>
+			 2b. Then click on "Show unavailable videos"<br>
+		3. Wait for the playlist webpage to fully load<br>
+		4. Scroll all the way down until you reach the final video of the playlist<br>
+		5. Go to your <b>YT-DLP Scripts folder</b> and open the `YTPlaylistLinkGrabber.txt` file<br>
+		6. Copy everything inside `YTPlaylistLinkGrabber.txt`<br>
+		7. Go back to your browser with the playlist open and hit <b>F12</b><br>
+		8. The Developer tools should open<br>
+		9. Click on the `Console` Tab<br>
+		10. Paste the code in the entry field of that tab then press Enter<br>
+		11. A `download_list.txt` file will be downloaded when done so successfully<br>
+		12. Move the `download_list.txt` to your <b>YT-DLP Scripts folder</b><br>
+		13. Then run the `YT-DLP Download List File.bat` script and choose the quality you want<br>
+		14. The downloaded videos will be located in the Downloads folder inside your Scripts folder<br>
+			 <br><video width="80%" height="70%" controls>
+			  <source src="https://cdn.discordapp.com/attachments/960872551398129725/1034418675941388339/YT-DLP-YTP-Playlist-Tutorial.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 </div>
 </div>
@@ -56,18 +304,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-    new Crate({
-        server: '644181172485619742', // Aspiring Leaders of The Righteous
-        channel: '960872551398129725' // #cool-tech-tips
-    })
-</script>
-<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-    new Crate({
-        server: '644181172485619742', // Aspiring Leaders of The Righteous
-        channel: '960877511712075798' // #troubleshooting
-    })
-</script>
 <body>
 </html>
 
