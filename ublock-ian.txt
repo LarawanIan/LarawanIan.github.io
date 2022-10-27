@@ -1,10 +1,10 @@
 ! Title: Ian Personal Blocklist
-! Redirect: https://pastebin.com/raw/Z5G9J5AB
+! Redirect: https://raw.githubusercontent.com/LarawanIan/LarawanIan.github.io/master/ublock-ian.txt
 
 ! 2022-10-26 https://www.dropbox.com
 www.dropbox.com##.dig-Modal-overlay.ReactModal__Overlay--after-open.ReactModal__Overlay
 
-! 2022-10-26 https://usceduph-my.sharepoint.com
+! 2022-10-26 https://usceduph-my.sharepoint.com MOBILE ONLY
 usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-textContainer-list
 usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-container-list.od-mobileWebToAppUpsell-container
 usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-actionOptions-container
