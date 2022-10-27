@@ -33,6 +33,10 @@ youtube.com##ytd-download-button-renderer
 youtube.com###endpoint:has-text(Shorts)
 youtube.com##ytd-rich-section-renderer:has(#title:has-text(Shorts))
 youtube.com##ytd-rich-section-renderer:has(#title:has-text(Breaking news))
+! Miniplayer button YouTube
+www.youtube.com##.ytp-button.ytp-miniplayer-button
+! End Cards YouTube
+www.youtube.com##.ytp-ce-element-show
 
 ! 2022 Steam
 steamcommunity.com###floatMoney
