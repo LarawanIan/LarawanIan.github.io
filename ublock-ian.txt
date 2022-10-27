@@ -1,0 +1,53 @@
+! Title: Ian Personal Blocklist
+! Redirect: https://pastebin.com/raw/Z5G9J5AB
+
+! 2022-10-26 https://www.dropbox.com
+www.dropbox.com##.dig-Modal-overlay.ReactModal__Overlay--after-open.ReactModal__Overlay
+
+! 2022-10-26 https://usceduph-my.sharepoint.com
+usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-textContainer-list
+usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-container-list.od-mobileWebToAppUpsell-container
+usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-actionOptions-container
+usceduph-my.sharepoint.com##.scrollableContent-123.ms-Modal-scrollableContent
+usceduph-my.sharepoint.com##.root-130.ms-Overlay
+usceduph-my.sharepoint.com##.main-122.od-mobileWebToAppUpsell-dialog--BannerStyle.ms-Dialog-main
+usceduph-my.sharepoint.com##.root-121.ms-Dialog.is-open.ms-Modal
+
+! 2021-11-19 YouTube and Google
+youtube.com##span.vidiq-video-page-menu
+youtube.com##.video-page-comments-filter
+youtube.com##span:nth-of-type(2) > .vidiq-button.new-layout.playlist.playlist-top-keywords-button
+youtube.com##.vidiq-button.new-layout.playlist.playlist-top-keywords-button
+youtube.com###clarify-box:has-text(COVID-19)
+youtube.com##.ytd-guide-entry-renderer.style-scope:has-text(Daily Ideas):xpath(..)
+youtube.com##.ytd-guide-entry-renderer.style-scope:has-text(Keyword Inspector):xpath(..)
+youtube.com##header + div:has-text(Unlock the most advanced growth tools for creators)
+youtube.com##button.comment-templates-dropdown-button
+youtube.com##.vidiq-comment-filter
+youtube.com##ytd-grid-video-renderer:has-text(#shorts)
+youtube.com##ytd-grid-video-renderer:has-text(#Shorts)
+youtube.com##ytd-grid-video-renderer:has-text(#SHORTS)
+youtube.com###voice-search-button
+youtube.com##ytd-compact-radio-renderer
+youtube.com##ytd-download-button-renderer
+youtube.com###endpoint:has-text(Shorts)
+youtube.com##ytd-rich-section-renderer:has(#title:has-text(Shorts))
+youtube.com##ytd-rich-section-renderer:has(#title:has-text(Breaking news))
+
+! 2022 Steam
+steamcommunity.com###floatMoney
+steamcommunity.com##.tradePanel:has-text(SIH's Sponsors)
+
+! 2022-10-21 ETC
+www.eneba.com##.oVRXv6
+typeracer.com##.DialogBox:has-text(disqualified)
+quora.com###root>.q-box>.q-box>.q-box.qu-overflow--hidden:style(filter: blur(0px) !important; overflow-y: scroll !important)
+quora.com###root>.q-box>.q-box>.q-box.qu-overflow--hidden > .q-box:style(height: 0px !important)
+quora.com###root>.q-box>.q-box>.q-box.qu-overflow--hidden > .q-box + div:style(position: sticky !important)
+quora.com##.qu-zIndex--blocking_wall
+
+! 2022-08-14 USC Annoying Shiz
+ismis.usc.edu.ph###myModal1
+ismis.usc.edu.ph###myModal
+ismis.usc.edu.ph##div.in.modal-backdrop:nth-of-type(13)
+ismis.usc.edu.ph##div.in.modal-backdrop:nth-of-type(12)
