@@ -6,6 +6,12 @@
  
  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+ a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+  -webkit-filter: invert(100%);
+}
+
 .ianFont{
   font-family: 'Roboto', sans-serif !important;
 }
@@ -2197,6 +2203,14 @@ body {
 .ianLink, .ianLink:hover {
   color: #71bafa;
 	text-decoration: none;
+}
+
+.ianSpecial{
+  color: #b5ce9d;
+}
+
+.ianInput{
+  color: #ce8455;
 }
 
 .card {
