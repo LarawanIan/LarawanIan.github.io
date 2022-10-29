@@ -6,6 +6,18 @@ a[target="_blank"]::after {
 	-webkit-filter: invert(100%);
 }
 
+.my-margin {
+    margin-left: 15rem!important;
+	margin-right: 15rem!important;
+  }
+@media only screen and (max-width: 576px) {
+  .my-margin {
+    margin-left: 0!important;
+	margin-right: 0!important;
+  }
+}
+
+
 .ianFont {
 	font-family: 'Roboto', sans-serif !important;
 }

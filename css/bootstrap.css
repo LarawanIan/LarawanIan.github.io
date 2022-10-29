@@ -3877,6 +3877,7 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler-icon {
+  -webkit-filter: invert(100%);
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
