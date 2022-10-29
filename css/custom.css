@@ -12,7 +12,7 @@ a[target="_blank"]::after {
 
 .ianLink,
 .ianLink:hover {
-	color: #71bafa;
+	color: #71bafa!important;
 	text-decoration: none;
 }
 
@@ -26,8 +26,29 @@ a[target="_blank"]::after {
 	color: #388df5 !important;
 }
 
+.ianCenterText{
+	text-align: center!important;
+}
+
+.center {
+	margin: auto!important;
+	padding: 10px;
+	}
+
 .ianInput {
 	color: #ce8455;
+}
+
+.ianTitle{
+	color: #fff!important;
+}
+
+.ianCard{
+	background-color: #17212b!important;
+}
+
+.ianCardhover{
+	background-color: #25303e!important;
 }
 
 .bd-code-snippet .bd-example {
