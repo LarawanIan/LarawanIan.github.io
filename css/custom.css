@@ -17,6 +17,12 @@ a[target="_blank"]::after {
   }
 }
 
+.gcashImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
 .my-margin-card {
     margin-left: 5rem!important;
 	margin-right: 5rem!important;
