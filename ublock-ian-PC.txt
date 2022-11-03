@@ -1,17 +1,15 @@
-! Title: Ian Personal Blocklist
-! Redirect: https://raw.githubusercontent.com/LarawanIan/LarawanIan.github.io/main/ublock-ian.txt
+! Homepage: https://larawanian.github.io/
+! Title: Ian Personal Blocklist - PC
+! Expires: 1 day
+! Redirect: https://raw.githubusercontent.com/LarawanIan/LarawanIan.github.io/main/ublock-ian-PC.txt
 
 ! 2022-10-26 https://www.dropbox.com
 www.dropbox.com##.dig-Modal-overlay.ReactModal__Overlay--after-open.ReactModal__Overlay
 
-! 2022-10-26 https://usceduph-my.sharepoint.com MOBILE ONLY
-usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-textContainer-list
-usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-container-list.od-mobileWebToAppUpsell-container
-usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-actionOptions-container
-usceduph-my.sharepoint.com##.scrollableContent-123.ms-Modal-scrollableContent
-usceduph-my.sharepoint.com##.root-130.ms-Overlay
-usceduph-my.sharepoint.com##.main-122.od-mobileWebToAppUpsell-dialog--BannerStyle.ms-Dialog-main
-usceduph-my.sharepoint.com##.root-121.ms-Dialog.is-open.ms-Modal
+! 2022-11-02 https://t.me/s/
+t.me##.tgme_right_column
+t.me##.tgme_widget_message:style(max-width: 150% !important;)
+t.me##.tgme_widget_message_bubble:style(max-width: none !important;)
 
 ! 2021-11-19 YouTube and Google
 youtube.com##span.vidiq-video-page-menu

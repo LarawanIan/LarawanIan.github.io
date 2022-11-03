@@ -1,0 +1,22 @@
+! Homepage: https://larawanian.github.io/
+! Title: Ian Personal Blocklist - Mobile
+! Expires: 1 day
+! Redirect: https://raw.githubusercontent.com/LarawanIan/LarawanIan.github.io/main/ublock-ian-Mobile.txt
+
+! 2022-08-14 USC Annoying Shiz
+ismis.usc.edu.ph###myModal1
+ismis.usc.edu.ph###myModal
+ismis.usc.edu.ph##div.in.modal-backdrop:nth-of-type(13)
+ismis.usc.edu.ph##div.in.modal-backdrop:nth-of-type(12)
+
+! 2022-11-02 https://www.dropbox.com
+www.dropbox.com##._app-download-interstitial-container_1mqtr_1
+
+! 2022-10-26 https://usceduph-my.sharepoint.com
+usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-textContainer-list
+usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-container-list.od-mobileWebToAppUpsell-container
+usceduph-my.sharepoint.com##.od-mobileWebToAppUpsell-actionOptions-container
+usceduph-my.sharepoint.com##.scrollableContent-123.ms-Modal-scrollableContent
+usceduph-my.sharepoint.com##.root-130.ms-Overlay
+usceduph-my.sharepoint.com##.main-122.od-mobileWebToAppUpsell-dialog--BannerStyle.ms-Dialog-main
+usceduph-my.sharepoint.com##.root-121.ms-Dialog.is-open.ms-Modal
