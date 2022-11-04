@@ -35,6 +35,8 @@ youtube.com##ytd-rich-section-renderer:has(#title:has-text(Breaking news))
 www.youtube.com##.ytp-button.ytp-miniplayer-button
 ! End Cards YouTube
 www.youtube.com##.ytp-ce-element-show
+! Change YouTube Default subtitle style
+youtube.com##.ytp-caption-segment:style(background: rgba(8, 8, 8, 0.5)!important; font-size: 22px!important; color: rgb(255, 255, 0)!important; fill: rgb(255, 255, 0)!important; font-family: "Deja Vu Sans Mono", "Lucida Console", Monaco, Consolas, "PT Mono", monospace!important;)
 
 ! 2022 Steam
 steamcommunity.com###floatMoney
