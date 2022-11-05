@@ -55,3 +55,14 @@ ismis.usc.edu.ph###myModal1
 ismis.usc.edu.ph###myModal
 ismis.usc.edu.ph##div.in.modal-backdrop:nth-of-type(13)
 ismis.usc.edu.ph##div.in.modal-backdrop:nth-of-type(12)
+
+! 2022 Twitter Login Nag
+twitter.com##.r-1upvrn0.r-l5o3uw.css-1dbjc4n
+twitter.com##div#layers div[data-testid="sheetDialog"]:upward(div[role="group"][tabindex="0"])
+twitter.com##html:style(overflow: auto !important;)
+
+! 2022 Pinterest Login Nags
+pinterest.*##[data-test-id="fullPageSignupModal"],[data-test-id="giftWrap"]
+pinterest.*##[data-test-id="signup-modal-inspired"]:upward(1)
+pinterest.*##body:style(overflow: auto !important)
+pinterest.*##[data-test-id="pin-closeup-image"]>[style="cursor: pointer; z-index: 1;"]

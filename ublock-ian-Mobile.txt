@@ -20,3 +20,12 @@ usceduph-my.sharepoint.com##.scrollableContent-123.ms-Modal-scrollableContent
 usceduph-my.sharepoint.com##.root-130.ms-Overlay
 usceduph-my.sharepoint.com##.main-122.od-mobileWebToAppUpsell-dialog--BannerStyle.ms-Dialog-main
 usceduph-my.sharepoint.com##.root-121.ms-Dialog.is-open.ms-Modal
+
+! 2022-11-04 Mobile Twitter Login Nags
+twitter.com##.r-rjfia.r-1mi5vxm.r-1wtj0ep.r-1iud8zs.r-1w6e6rj.r-16y2uox.r-18u37iz.css-1dbjc4n
+twitter.com##.css-1dbjc4n.r-18u37iz.r-16y2uox.r-1w6e6rj.r-1iud8zs.r-1wtj0ep.r-1mi5vxm.r-rjfia
+twitter.com##.r-o52ifk:style(height:45px!important;)
+twitter.com##.r-g6jmlv.r-ipm5af.r-1xcajam.r-sqn304.r-1777fci.r-1pi2tsx.r-18u37iz.r-1kihuf0.r-1oszu61.css-1dbjc4n
+
+! 2022-11-04 Mobile Pinterest Login Nags
+www.pinterest.ph###mweb-unauth-container > .Hsu.iyn.zI7.XiG > .qiB
