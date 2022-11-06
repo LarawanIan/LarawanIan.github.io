@@ -17,6 +17,27 @@ a[target="_blank"]::after {
   }
 }
 
+.bg-hightlight-tg {
+	--bs-bg-opacity: 1;
+	background-color: #242f3d !important;
+  }
+  
+  .bg-dark-tg {
+	--bs-bg-opacity: 1;
+	background-color: #17212b !important;
+  }
+  
+  .bg-darker-tg {
+	--bs-bg-opacity: 1;
+	background-color: #0e1621 !important;
+  }
+  
+  .bg-darkest-tg {
+	--bs-bg-opacity: 1;
+	background-color: #070b11 !important;
+  }
+
+
 .gcashImg {
 	display: block;
 	margin-left: auto;
