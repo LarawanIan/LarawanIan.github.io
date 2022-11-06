@@ -32,3 +32,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+$(document).ready(function() {
+    $('a[rel=ext]').attr('target', '_blank');
+});
