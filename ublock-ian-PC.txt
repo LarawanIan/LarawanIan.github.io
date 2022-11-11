@@ -67,7 +67,8 @@ pinterest.*##[data-test-id="signup-modal-inspired"]:upward(1)
 pinterest.*##body:style(overflow: auto !important)
 pinterest.*##[data-test-id="pin-closeup-image"]>[style="cursor: pointer; z-index: 1;"]
 
-! 2022-11-09 new.reddit.com New Account Info Nag
+! 2022-11-09 Annoying reddit stuffs
 www.reddit.com##._1ph1IkMoPsBwo5F5FlxxD._2Bejocqb-InO8686E2ehf
 www.reddit.com##._1acwN_tUhJ8w-n7oCp-Aw3._199HcTqT2ANvw-1B0onPUa._1DK52RbaamLOWw5UPaht_S
 www.reddit.com##._2IHh1GBfUxJVQQX0dJvAry
+www.reddit.com##._1CRxXSvUhagxkF2Z5KeFSg
