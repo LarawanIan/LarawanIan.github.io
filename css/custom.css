@@ -6,26 +6,6 @@ a[target="_blank"]::after{
 	-webkit-filter: invert(100%);
 }
 
-.bodyEmoji{
-	font-size: var(--bs-body-font-size);
-	font-family: w11emoji;
-}
-
-.accordionEmoji{
-	font-size: 1rem;
-	font-family: w11emoji;
-}
-
-@font-face {
-	font-family: w11emoji;
-    src: url('fonts/SegoeUIEmoji.eot');
-    src: url('fonts/SegoeUIEmoji.eot?#iefix') format('embedded-opentype'),
-        url('fonts/SegoeUIEmoji.woff2') format('woff2'),
-        url('fonts/SegoeUIEmoji.woff') format('woff'),
-        url('fonts/SegoeUIEmoji.ttf') format('truetype'),
-        url('fonts/SegoeUIEmoji.svg#SegoeUIEmoji') format('svg');
-}
-
 .my-margin {
     margin-left: 12rem!important;
 	margin-right: 12rem!important;
