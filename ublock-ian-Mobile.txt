@@ -32,3 +32,6 @@ www.pinterest.ph###mweb-unauth-container > .Hsu.iyn.zI7.XiG > .qiB
 
 ! 2022-11-05 Mobile Instagram Login Nags
 www.instagram.com##.x1rozsjd.xh8yej3.x11njtxf.x2b8uid.xixxii4.x1t2a60a.xs9asl8.x1mpkggp.x123j3cw.x1mh8g0r.xat24cr.x11i5rnm.xdj266r.x17qophe.xl56j7k.x2lah0s.xdt5ytf.x78zum5.x9f619.xpkhe5l.x1ey2m1c.xoqspk4.xfh8nwu.xav7gou.xaqea5y.x1b1mbwd.x6umtig.xvjdkko.x6s0dn4
+
+! 2022-11-13 Reddit Nags
+http://www.reddit.com##.m-active.XPromoPopupRpl
