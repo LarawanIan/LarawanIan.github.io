@@ -17,6 +17,21 @@ a[target="_blank"]::after{
   }
 }
 
+.ianUL {
+	display: inline-block;
+	text-align: left;
+  }
+
+.reVancedUL {
+	column-count:2;
+	-moz-column-count:2;
+	-webkit-column-count:2;
+}
+
+.ianParagraph{
+	margin: 0px;
+	padding: 0px;
+ }
 .bg-hightlight-tg {
 	--bs-bg-opacity: 1;
 	background-color: #242f3d !important;
