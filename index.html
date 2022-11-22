@@ -598,10 +598,103 @@
                         <div id="techTipsCollapseNine" class="accordion-collapse collapse" aria-labelledby="techTipsHeadingNine" data-bs-parent="#accordionExample">
                            <div class="accordion-body">
                               <u><b><i>This will only work on Windows 11!</b></i></u><br>
+                              <br><u><b><i>Prerequisites:</b></i></u><br>
+                              • <i class="ianSpecial">Virtualization enabled in your BIOS</i><br>
+                              • <i class="ianSpecial">.Net Framework</i><br>
+                              • <i class="ianSpecial">Visual C++ Redistributable</i><br>
+                              <br><u><b><i>Setting up [Part 1]:</b></i></u><br>
+                              1. Press <b class="ianInput">Start</b> and search for Windows Features<br>
+                              2. Select <b class="ianInput">Turn Windows features on or off</b><br>
+                              3. Enable these features:<br>
+                                 • <b class="ianInput">Hyper-V</b><br>
+                                 • <b class="ianInput">Virtual Machine Platform</b><br>
+                                 • <b class="ianInput">Windows Hypervisor Platform</b><br>
+                              4. Press <b class="ianInput">OK</b> and <i class="ianSpecial">restart your Computer</i><br>
+                              <br><u><b><i>Setting up [Part 2]:</b></i></u><br>
+                              1. Head to this link: <a class="ianLink" href="bit.ly/ALTR-WSA" target="_blank">bit.ly/ALTR-WSA</a><br>
+                              2. Click on the <b class="ianInput">Download button</b> located at the top left<br>
+                              3. Extract the folder in the downloaded archive<br>
+                              4. Open the extracted folder then open the <i class="ianSpecial">Unli GPhotos folder</i><br>
+                              5. Open the <b class="ianInput">Download Links.txt file</b> and open the links inside the text file<br>
+                                 • <a class="ianLink" href="https://github.com/LSPosed/LSPosed/releases/latest" target="_blank">LSPosed (select Zygisk zip)</a><br>
+                                 • <a class="ianLink" href="https://github.com/BaltiApps/Pixelify-Google-Photos/releases/latest" target="_blank">Pixelify-Google-Photos (select the apk)</a><br>
+                              6. <i class="ianSpecial">Transfer the downloaded files into the Unli GPhotos folder</i> and <b class="ianInput">rename them to a shorter filename</b> if possible<br>
+                              7. Go up one folder from Unli GPhotos folder and Open the <b class="ianInput">WSA-with-magisk-stable... 7z</b> archive<br>
+                              8. Extract the folder inside the 7z archive somewhere safe <i class="ianSpecial">(This is where Android will be installed, make sure it doesn't get deleted!)</i><br>
+                              9. Rename the extracted folder to <b class="ianInput">MagiskWSA</b><br>
+                              <br><u><b><i>Setting up MagiskWSA:</b></i></u><br>
+                              1. Open the MagiskWSA folder and <b class="ianInput">click on the address bar</b> at the top and <b class="ianInput">copy that folder location</b><br>
+                              2. <b class="ianInput">Right click the Start button</b> and click on <b class="ianInput">Windows PowerShell (Admin)</b><br>
+                              3. In the PowerShell window enter these commands:<br>
+                                 • <b class="ianInput">cd MagiskWSA-folder-location</b> (Example: cd E:\Programs\MagiskWSA)<br>
+                                 • <b class="ianInput">PowerShell.exe -ExecutionPolicy Bypass -File .\Install.ps1</b><br>
+                              4. Doing the commands successfully will launch Windows Subsystem for Android<br>
+                              5. <i class="ianSpecial">Go back to the Unli GPhotos folder (keep that folder in the background)</i> and continue to wait for WSA to load<br>
+                              6. Once WSA is fully loaded, login the Google account you wish to use the unlimited photos backup with<br>
+                              7. <b class="ianInput">Press Start</b> and <i class="ianSpecial">search for</i> <b class="ianInput">Subsystem</b><br>
+                              8. Click on <b class="ianInput">Windows Subsystem for Android Settings</b><br>
+                              9. Click on <b class="ianInput">Turn off</b> at the bottom of the settings window<br>
+                              10. Enable <b class="ianInput">Advanced Networking</b><br>
+                              11. Click on the <b class="ianInput">Developer tab</b> on the left side of the settings window<br>
+                              12. Enable <b class="ianInput">Developer mode</b><br>
+                              13. Click on <b class="ianInput">Manage developer settings</b> and wait for WSA to load<br>
+                              14. <i class="ianSpecial">If there is a Firewall pop-up for WSA</i>, <b class="ianInput">Allow</b> it<br>
+                              15. <i class="ianSpecial">In WSA Developer Options</i>, <b class="ianInput">scroll down</b> and make sure <b class="ianInput">USB debugging is enabled</b><br>
+                              16. Open a CMD window and type this command:<br>
+                                 • <b class="ianInput">adb connect 127.0.0.1:58526</b><br>
+                              17. <i class="ianSpecial">On the taskbar</i>, a <i class="ianSpecial">new WSA window</i> is opened, <b class="ianInput">click on it</b><br>
+                              18. It'll <i class="ianSpecial">ask for ADB Debugging rights</i>, check the <b class="ianInput">Always allow from this computer</b> option and press <b class="ianInput">Allow</b> and <b class="ianInput">exit the CMD window</b><br>
+                              19. <i class="ianSpecial">Go back to the Unli GPhotos folder</i> and <b class="ianInput">click on its address bar</b><br>
+                              20. <b class="ianInput">Type and enter CMD</b> on that <i class="ianSpecial">address bar</i><br>
+                              21. <i class="ianSpecial">Re-enter the adb connect</i> command<br>
+                                 • <b class="ianInput">adb connect 127.0.0.1:58526</b><br>
+                              22. <i class="ianSpecial">Install the Lawnchair and MiXplorer APKs</i> with this command in CMD:<br>
+                                 • <b class="ianInput">adb install "filename.apk"</b> (Example: adb install "Lawnchair 2 9.1.apk")<br>
+                              <br><u><b><i>Setting up Android:</b></i></u><br>
+                              1. Press <b class="ianInput">Start</b> and search for <b class="ianInput">Lawnchair</b> and <b class="ianInput">open it</b><br>
+                              2. <i class="ianSpecial">In Lawnchair's drawer</i>, open the <b class="ianInput">Magisk app</b><br>
+                              3. Go to <i class="ianSpecial">Magisk's settings and scroll down</i>, enable <b class="ianInput">Zygisk</b><br>
+                              4. Go back to <i class="ianSpecial">Magisk's main menu</i> and click on the <b class="ianInput">Modules tab</b><br>
+                              5. Go back to <i class="ianSpecial">Lawnchair's drawer</i> and open <b class="ianInput">MiXplorer</b><br>
+                              6. Give MiXplorer <b class="ianInput">access to manage all files</b> and <b class="ianInput">accept the Privacy Policy</b><br>
+                              7. Click on the ( <i class="fa-solid fa-ellipsis-vertical ianLink"></i> ) button at the top right of MiXplorer<br>
+                              8. Select <b class="ianInput">Servers</b> and click on <b class="ianInput">Start FTP Server</b><br>
+                              9. It'll print out an <i class="ianSpecial">FTP address</i>, <b class="ianInput">copy that address</b> and paste that to a <b class="ianInput">Windows Explorer address bar</b><br>
+                              10. <i class="ianSpecial">Once inside the FTP folder</i>, open the <b class="ianInput">Documents folder</b><br>
+                              11. <b class="ianInput">Copy</b> the <i class="ianSpecial">LSPosed zip archive</i> from <i class="ianSpecial">Unli GPhotos folder</i> to the <i class="ianSpecial">FTP\Documents folder</i><br>
+                              12. <b class="ianInput">Stop MiXplorer's FTP server</b> and close MiXplorer<br>
+                              13. <b class="ianInput">Open the Magisk app</b> again and go back to the <b class="ianInput">modules tab</b><br>
+                              14. Click on <b class="ianInput">Install from storage</b><br>
+                              15. Click on the ( <i class="fa-solid fa-bars ianLink"></i> ) button at the top left and select <b class="ianInput">Pixel 5</b><br>
+                              16. Click on <b class="ianInput">Documents</b> and select the <b class="ianInput">LSPosed zip</b> archive<br>
+                              17. After Magisk is finished installing LSPosed, click on <b class="ianInput">Reboot</b><br>
+                              18. Wait for WSA to fully load once again<br>
+                              19. Go back to the <b class="ianInput">Unli GPhotos folder</b> and click on it's <b class="ianInput">address bar</b> then <b class="ianInput">type and enter CMD</b><br>
+                              20. Perform the ADB install command with the <i class="ianSpecial">Pixelify APK file</i><br>
+                                 • <b class="ianInput">adb install "filename.apk" (Example: adb install "pixelify.apk")</b><br>
+                              21. <i class="ianSpecial">Windows 11 will give out a WSA notification</i>, <b class="ianInput">click on that notification</b> to open <i class="ianSpecial">LSPosed</i><br>
+                              22. Enable the <b class="ianInput">Pixelify GPhotos module</b> and minimize LSPosed for now<br>
+                              23. Open <b class="ianInput">Play Store</b> and install <b class="ianInput">Google Photos</b> <i class="ianSpecial">(don't open the Photos app yet)</i><br>
+                              24. Go back to <b class="ianInput">LSPosed</b> and <i class="ianSpecial">refresh the modules tab</i> by going to other tabs and back<br>
+                              25. <i class="ianSpecial">Make sure the Photos app is enabled</i> under the Enable Module bar<br>
+                              26. Exit out of LSPosed and press <b class="ianInput">Start</b>, then open <b class="ianInput">Pixelify GPhotos</b><br>
+                              27. Set the <i class="ianSpecial">Device to Spoof</i> settings to <b class="ianInput">Pixel XL</b><br>
+                              28. Open <b class="ianInput">Lawnchair</b>, and go to its drawer<br>
+                              29. <b class="ianInput">Hold click the Google Photos</b> app and select <b class="ianInput">App info</b><br>
+                              30. <b class="ianInput">Force stop</b> the app <i class="ianSpecial">(If it's greyed out, you don't have to)</i> then <b class="ianInput">Open the Google Photos</b> app<br>
+                              31. Give Google Photos <b class="ianInput">access to pictures and media</b><br>
+                              32. <b class="ianInput">Enable the Backup and Sync option</b>, it should say <i class="ianSpecial">"This Pixel can back up unlimited photos and videos at no charge"</i><br>
+                              <br><u><b><i>Transferring Photos for Backing Up:</b></i></u><br>
+                              1. Open <b class="ianInput">MiXplorer</b> and start a <b class="ianInput">FTP server</b><br>
+                              2. Open the FTP address in Windows Explorer<br>
+                              3. Copy the pictures you want backed up into the DCIM folder<br>
+                              4. After copying is complete, <b class="ianInput">stop the FTP server</b><br>
+                              5. Open the Google Photos app<br>
+                              6. You're profile picture should have an uploading status meaning your photos are being backed up!<br>
                               <br>
                               <div class="iframe-container">
                                  <br><iframe width="420" height="315"
-                                    src="https://www.youtube.com/embed/-PBpuBIDQTI">
+                                    src="https://www.youtube.com/embed/6-LY1JLgk6I">
                                  Your browser does not support the iframe tag.
                                  </iframe> 
                               </div>
