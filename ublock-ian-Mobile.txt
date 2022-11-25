@@ -35,3 +35,7 @@ www.instagram.com##.x1rozsjd.xh8yej3.x11njtxf.x2b8uid.xixxii4.x1t2a60a.xs9asl8.x
 
 ! 2022-11-13 Reddit Nags
 http://www.reddit.com##.m-active.XPromoPopupRpl
+
+! 2022-11-22 Digital Spy Cookies
+www.digitalspy.com##.ot-sdk-container
+www.digitalspy.com##.ot-fade-in.onetrust-pc-dark-filter

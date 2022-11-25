@@ -6,6 +6,35 @@ a[target="_blank"]::after{
 	-webkit-filter: invert(100%);
 }
 
+#preloader{
+	background: #000 url(https://gifimage.net/wp-content/uploads/2018/11/circle-loader-gif-2.gif) no-repeat center;
+	background-size: 20%;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+}
+
+h1,h2 {
+	font-family: 'Product Sans Medium', sans-serif;
+}
+
+h3,h4{
+	font-family: 'Product Sans', sans-serif;
+}
+
+p,a,.tutFont{
+	font-family: 'Product Sans Light', sans-serif;
+}
+
+ul{
+	font-family: 'Product Sans Light', sans-serif;
+}
+
+body{
+	overflow: hidden;
+}
+
 .my-margin {
     margin-left: 12rem!important;
 	margin-right: 12rem!important;

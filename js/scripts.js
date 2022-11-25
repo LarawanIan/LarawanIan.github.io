@@ -33,6 +33,14 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// Adds new tab icon on every _blank attribute link
 $(document).ready(function() {
     $('a[rel=ext]').attr('target', '_blank');
 });
+
+// Preloader script
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+    document.body.style.overflow = "unset";
+})
