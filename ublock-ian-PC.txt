@@ -72,3 +72,19 @@ www.reddit.com##._1ph1IkMoPsBwo5F5FlxxD._2Bejocqb-InO8686E2ehf
 www.reddit.com##._1acwN_tUhJ8w-n7oCp-Aw3._199HcTqT2ANvw-1B0onPUa._1DK52RbaamLOWw5UPaht_S
 www.reddit.com##._2IHh1GBfUxJVQQX0dJvAry
 www.reddit.com##._1CRxXSvUhagxkF2Z5KeFSg
+
+! 2022-11-11 https://www.vg247.com
+www.vg247.com##.ot-fade-in.onetrust-pc-dark-filter
+www.vg247.com##.ot-sdk-container
+
+! 2022-11-14 https://igdl.in
+igdl.in##.anti_ab_background
+
+! 2022-11-15 https://igdl.in
+igdl.in##.anti_ab_window
+
+! 2022-11-16 https://www.imdb.com
+www.imdb.com##.jVgexo.sc-92eff7c6-5
+
+! 2022-11-27 https://www.youtube.com
+www.youtube.com##.ytp-button.ytp-remote-button
