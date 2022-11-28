@@ -31,8 +31,10 @@ youtube.com##ytd-download-button-renderer
 youtube.com###endpoint:has-text(Shorts)
 youtube.com##ytd-rich-section-renderer:has(#title:has-text(Shorts))
 youtube.com##ytd-rich-section-renderer:has(#title:has-text(Breaking news))
-! Miniplayer button YouTube
+! Unnecessary buttons (for me atleast)
 www.youtube.com##.ytp-button.ytp-miniplayer-button
+www.youtube.com##.ytp-button.ytp-remote-button
+www.youtube.com##.ytp-left-controls > .ytp-button.ytp-next-button
 ! End Cards YouTube
 www.youtube.com##.ytp-ce-element-show
 ! Change YouTube Default subtitle style
@@ -85,6 +87,3 @@ igdl.in##.anti_ab_window
 
 ! 2022-11-16 https://www.imdb.com
 www.imdb.com##.jVgexo.sc-92eff7c6-5
-
-! 2022-11-27 https://www.youtube.com
-www.youtube.com##.ytp-button.ytp-remote-button
