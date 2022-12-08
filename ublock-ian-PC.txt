@@ -94,3 +94,7 @@ www.imdb.com##.jVgexo.sc-92eff7c6-5
 ! 2022-12-01 https://getpaidstock.com
 getpaidstock.com##.anti_ab_background
 getpaidstock.com##.anti_ab_window
+
+! 2022-12-07 https://coolors.co
+coolors.co##.axlZpcyedMI.ai0sVLFdn5z
+coolors.co##.aaBWqpZHQHN.au5XeqtTm0R.aURv1yya3Wo
