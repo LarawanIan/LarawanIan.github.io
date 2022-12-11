@@ -98,3 +98,9 @@ getpaidstock.com##.anti_ab_window
 ! 2022-12-07 https://coolors.co
 coolors.co##.axlZpcyedMI.ai0sVLFdn5z
 coolors.co##.aaBWqpZHQHN.au5XeqtTm0R.aURv1yya3Wo
+
+! 2022-12-11 https://1337x.to VPN WARNING supress
+1337x.to###l004ebf0058f727341dad4274ed6aa4cf02a84fff > div
+
+! 2022-12-11 https://soap2day.ac credits http://redd.it/zj11zi
+soap2day.ac##+js(aeld.js, click, _0x90b0be)
