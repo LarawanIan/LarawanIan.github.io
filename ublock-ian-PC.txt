@@ -25,9 +25,10 @@ youtube.com##.ytd-guide-entry-renderer.style-scope:has-text(Keyword Inspector):x
 youtube.com##header + div:has-text(Unlock the most advanced growth tools for creators)
 youtube.com##button.comment-templates-dropdown-button
 youtube.com##.vidiq-comment-filter
-youtube.com##ytd-grid-video-renderer:has-text(#shorts)
-youtube.com##ytd-grid-video-renderer:has-text(#Shorts)
-youtube.com##ytd-grid-video-renderer:has-text(#SHORTS)
+! YT Subscriptions Hide Shorts - Grid View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer [overlay-style="SHORTS"]:upward(ytd-grid-video-renderer)
+! YT Subscriptions Hide Shorts - List View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-item-section-renderer)
 youtube.com###voice-search-button
 youtube.com##ytd-compact-radio-renderer
 youtube.com##ytd-download-button-renderer
@@ -42,6 +43,9 @@ www.youtube.com##.ytp-left-controls > .ytp-button.ytp-next-button
 www.youtube.com##.ytp-ce-element-show
 ! Change YouTube Default subtitle style
 youtube.com##.ytp-caption-segment:style(background: rgba(8, 8, 8, 0.5)!important; font-size: 22px!important; color: rgb(255, 255, 0)!important; fill: rgb(255, 255, 0)!important; font-family: "Deja Vu Sans Mono", "Lucida Console", Monaco, Consolas, "PT Mono", monospace!important;)
+
+! 2022-11-22 https://mail.google.com
+mail.google.com##.GR
 
 ! 2022 Steam
 steamcommunity.com###floatMoney
@@ -104,3 +108,25 @@ coolors.co##.aaBWqpZHQHN.au5XeqtTm0R.aURv1yya3Wo
 
 ! 2022-12-11 https://soap2day.ac credits http://redd.it/zj11zi
 soap2day.ac##+js(aeld.js, click, _0x90b0be)
+
+! Dangerous Websites
+||1377x.to
+||www.1337xxx.to
+||www.1377x.is
+||www.1337xx.to
+||thepiratebay.org
+||www.skidrowreloaded.com
+||fitgirl-repack.com
+||fitgirl-repacks.website
+||kickasstorrents.to
+||kickass.to
+||kickass.cr
+||kat.cr
+||katcr.to
+||kickasstorrent.cr
+||kickasstorrents.cr
+||kat.am
+||www.bitlord.com
+||www.utorrent.com
+||steamunlocked.net
+||steamunlocked.to

@@ -39,3 +39,25 @@ http://www.reddit.com##.m-active.XPromoPopupRpl
 ! 2022-11-22 Digital Spy Cookies
 www.digitalspy.com##.ot-sdk-container
 www.digitalspy.com##.ot-fade-in.onetrust-pc-dark-filter
+
+! Dangerous Websites
+||1377x.to
+||www.1337xxx.to
+||www.1377x.is
+||www.1337xx.to
+||thepiratebay.org
+||www.skidrowreloaded.com
+||fitgirl-repack.com
+||fitgirl-repacks.website
+||kickasstorrents.to
+||kickass.to
+||kickass.cr
+||kat.cr
+||katcr.to
+||kickasstorrent.cr
+||kickasstorrents.cr
+||kat.am
+||www.bitlord.com
+||www.utorrent.com
+||steamunlocked.net
+||steamunlocked.to
