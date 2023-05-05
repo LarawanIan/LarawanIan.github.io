@@ -196,8 +196,32 @@ try {
 
 #---------------------------------------------------------------------------------
 
-# Get the directory path where this script is located
+Write-Host "Downloading Ian's YT-DLP Scripts" -ForegroundColor Yellow
+# Set download URL and destination folder
 $scriptDirectory = Split-Path -Parent $MyInvocation.MyCommand.Path
+$downloadUrl = "https://github.com/LarawanIan/LarawanIan.github.io/raw/main/assets/archives/yt-dlp_scripts.zip"
+$destFolder = "$scriptDirectory\yt-dlp"
+$scriptsZipPath = Join-Path $destFolder "yt-dlp_scripts.zip"
 
-# Create a new folder called "yt-dlp scripts" in the same directory as the script
-New-Item -ItemType Directory -Path "$scriptDirectory\yt-dlp"
+# Create the destination folder if it doesn't exist
+if (!(Test-Path $destFolder)) {
+    New-Item -ItemType Directory -Force -Path $destFolder
+}
+
+# Download the yt-dlp scripts zip file
+Invoke-WebRequest -Uri $downloadUrl -OutFile $scriptsZipPath
+
+# Load assembly for ZipFile
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+
+# Extract all files from the zip file
+[System.IO.Compression.ZipFile]::ExtractToDirectory($scriptsZipPath, $destFolder)
+
+# Remove the downloaded zip file
+Remove-Item -Path $scriptsZipPath -Force
+
+# Done!
+Write-Host "`n`nYT-DLP Scripts downloaded! You can now close this window if it stays open." -ForegroundColor Green
+Write-Host "Should anything go wrong, your System/Machine PATH is displayed above."
+Write-Host "Closing in 2 seconds"
+Start-Sleep -Seconds 2
