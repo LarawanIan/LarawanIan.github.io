@@ -202,6 +202,7 @@ $scriptDirectory = Split-Path -Parent $MyInvocation.MyCommand.Path
 $downloadUrl = "https://github.com/LarawanIan/LarawanIan.github.io/raw/main/assets/archives/yt-dlp_scripts.zip"
 $destFolder = "$scriptDirectory\yt-dlp"
 $scriptsZipPath = Join-Path $destFolder "yt-dlp_scripts.zip"
+$password = "epic123"
 
 # Create the destination folder if it doesn't exist
 if (!(Test-Path $destFolder)) {
@@ -214,8 +215,8 @@ Invoke-WebRequest -Uri $downloadUrl -OutFile $scriptsZipPath
 # Load assembly for ZipFile
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
-# Extract all files from the zip file
-[System.IO.Compression.ZipFile]::ExtractToDirectory($scriptsZipPath, $destFolder)
+# Extract all files from the zip file with the password
+[System.IO.Compression.ZipFile]::ExtractToDirectory($scriptsZipPath, $destFolder, [System.Text.Encoding]::Default, $true, $password)
 
 # Remove the downloaded zip file
 Remove-Item -Path $scriptsZipPath -Force
