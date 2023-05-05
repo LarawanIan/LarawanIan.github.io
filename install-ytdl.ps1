@@ -164,6 +164,8 @@ function Install-YTDLP() {
         Start-Sleep -Seconds 2
     }
 }
+
+#---------------------------------------------------------------------------------
  
 # Check if ffmpeg is installed
 try {
@@ -191,3 +193,11 @@ try {
     Write-Host "aria2c is not installed. Installing..." -ForegroundColor Yellow
     Install-aria2c
 }
+
+#---------------------------------------------------------------------------------
+
+# Get the directory path where this script is located
+$scriptDirectory = Split-Path -Parent $MyInvocation.MyCommand.Path
+
+# Create a new folder called "yt-dlp scripts" in the same directory as the script
+New-Item -ItemType Directory -Path "$scriptDirectory\yt-dlp"
