@@ -206,6 +206,8 @@ $scriptsZipPath = Join-Path $destFolder "yt-dlp_scripts.zip"
 # Create the destination folder if it doesn't exist
 if (!(Test-Path $destFolder)) {
     New-Item -ItemType Directory -Force -Path $destFolder
+} else {
+    Get-ChildItem $destFolder | Where-Object { $_.FullName -ne (Join-Path $destFolder "Downloads") } | Remove-Item -Recurse -Force
 }
 
 # Download the yt-dlp scripts zip file
