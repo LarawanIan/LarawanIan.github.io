@@ -198,7 +198,7 @@ try {
 
 Write-Host "Downloading Ian's YT-DLP Scripts" -ForegroundColor Yellow
 # Set download URL and destination folder
-$scriptDirectory = Split-Path -Parent $MyInvocation.MyCommand.Path
+$scriptDirectory = Split-Path -Parent $PSCommandPath
 $downloadUrl = "https://github.com/LarawanIan/LarawanIan.github.io/raw/main/assets/archives/yt-dlp_scripts.zip"
 $destFolder = "$scriptDirectory\yt-dlp"
 $scriptsZipPath = Join-Path $destFolder "yt-dlp_scripts.zip"

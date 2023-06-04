@@ -40,6 +40,17 @@ http://www.reddit.com##.m-active.XPromoPopupRpl
 www.digitalspy.com##.ot-sdk-container
 www.digitalspy.com##.ot-fade-in.onetrust-pc-dark-filter
 
+! 2023-04-26 https://wall.alphacoders.com
+wall.alphacoders.com###cookie_consent
+
+! 2023-06-03 https://www.nintendolife.com
+www.nintendolife.com##.ot-fade-in.onetrust-pc-dark-filter
+www.nintendolife.com##.ot-sdk-container
+
+! 2023-06-03 https://www.nintendo.co.uk
+www.nintendo.co.uk##.ot-sdk-container
+www.nintendo.co.uk##.ot-bottom-left.otFloatingFlat
+
 ! Dangerous Websites
 ||1377x.to
 ||www.1337xxx.to
