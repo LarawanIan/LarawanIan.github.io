@@ -18,7 +18,7 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 # ----------------------------------------
-# This script downloads and places yt-dlp, ffmpeg, aria2c in C:\Tools, and adds it to PATH assuming it's not already there.
+# This script downloads and places yt-dlp, ffmpeg, aria2c, scrcpy in C:\Tools, and adds it to PATH assuming it's not already there.
 # ----------------------------------------
 
 Invoke-Expression (Invoke-RestMethod Import-RemoteFunction.tc.ht) # Get RemoteFunction importer
@@ -130,11 +130,80 @@ function Install-aria2c() {
     }
 }
 
+function Install-Scrcpy() {
+    Invoke-Elevated {
+        Write-Host "Downloading SCRCPY (Screen Mirroring and Remote Control for Android devices)" -ForegroundColor Yellow
+        # Set download URL and destination folder
+        $downloadUrl = "https://github.com/Genymobile/scrcpy/releases/download/v2.0/scrcpy-win64-v2.0.zip"
+        $destFolder = "C:\Tools"
+        $scrcpyZipPath = Join-Path $destFolder "scrcpy-win64-v2.0.zip"
+        $extractedFolderName = "scrcpy-win64-v2.0"
+    
+        # Create the destination folder if it doesn't exist
+        if (!(Test-Path $destFolder)) {
+            New-Item -ItemType Directory -Force -Path $destFolder
+        }
+    
+        # Download the SCRCPY zip file
+        Invoke-WebRequest -Uri $downloadUrl -OutFile $scrcpyZipPath
+    
+        # Load assembly for ZipFile
+        Add-Type -AssemblyName System.IO.Compression.FileSystem
+    
+        # Extract everything from the specified folder inside the zip file
+        $zip = [System.IO.Compression.ZipFile]::OpenRead($scrcpyZipPath)
+        $entries = $zip.Entries | Where-Object { $_.FullName.StartsWith($extractedFolderName) }
+        $extractedFolder = Join-Path $destFolder $extractedFolderName
+        if (!(Test-Path $extractedFolder)) {
+            New-Item -ItemType Directory -Force -Path $extractedFolder
+        }
+        foreach ($entry in $entries) {
+            $relativePath = $entry.FullName.Substring($extractedFolderName.Length + 1)
+            $extractedPath = Join-Path $extractedFolder $relativePath
+            if ($entry.Length -eq 0) {
+                New-Item -ItemType Directory -Force -Path $extractedPath
+            } else {
+                [System.IO.Compression.ZipFileExtensions]::ExtractToFile($entry, $extractedPath, $true)
+            }
+        }
+        $zip.Dispose()
+    
+        # Remove the downloaded zip file
+        Remove-Item -Path $scrcpyZipPath -Force
+		
+		$sourceFolder = "C:\Tools\scrcpy-win64-v2.0"
+		$destinationFolder = "C:\Tools"
+
+		# Create the destination folder if it doesn't exist
+		if (!(Test-Path $destinationFolder)) {
+			New-Item -ItemType Directory -Force -Path $destinationFolder
+		}
+
+		# Get all files and subfolders from the source folder
+		$files = Get-ChildItem $sourceFolder -Recurse
+
+		# Move each file to the destination folder
+		foreach ($file in $files) {
+			$destinationPath = Join-Path $destinationFolder $file.Name
+			Move-Item -Path $file.FullName -Destination $destinationPath -Force
+		}
+
+		# Remove the source folder
+		Remove-Item -Path $sourceFolder -Force
+
+        
+        # Done!
+        Write-Host "`n`nSCRCPY is now installed! You can now close this window if it stays open." -ForegroundColor Green
+        Write-Host "Closing in 2 seconds"
+        Start-Sleep -Seconds 2
+    }
+}
+
 function Install-YTDLP() {
     Invoke-Elevated {
         Write-Host "Downloading YT-DLP (download videos from youtube or other video platforms)" -ForegroundColor Yellow
         # Set download URL and destination folder
-        $downloadUrl = "https://github.com/yt-dlp/yt-dlp/releases/download/2023.03.04/yt-dlp.exe"
+        $downloadUrl = "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe"
         $destFolder = "C:\Tools"
         $ytDlpPath = Join-Path $destFolder "yt-dlp.exe"
 
@@ -194,11 +263,23 @@ try {
     Install-aria2c
 }
 
+# Check if aria2c is installed
+try {
+    $ariaCommand = Get-Command scrcpy -ErrorAction Stop
+    Write-Host "scrcpy is already installed." -ForegroundColor Yellow
+} catch {
+    Write-Host "scrcpy is not installed. Installing..." -ForegroundColor Yellow
+    Install-Scrcpy
+}
+
 #---------------------------------------------------------------------------------
 
 Write-Host "Downloading Ian's YT-DLP Scripts" -ForegroundColor Yellow
+
+# Ask for user input for script directory
+$scriptDirectory = Read-Host "Enter the script directory (e.g., D:\Downloads\Test)"
+
 # Set download URL and destination folder
-$scriptDirectory = Split-Path -Parent $script:MyInvocation.MyCommand.Definition
 $downloadUrl = "https://github.com/LarawanIan/LarawanIan.github.io/raw/main/assets/archives/yt-dlp_scripts.zip"
 $destFolder = "$scriptDirectory\yt-dlp"
 $scriptsZipPath = Join-Path $destFolder "yt-dlp_scripts.zip"
@@ -221,6 +302,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 # Remove the downloaded zip file
 Remove-Item -Path $scriptsZipPath -Force
+
 
 # Done!
 Write-Host "`n`nYT-DLP Scripts downloaded! You can now close this window if it stays open." -ForegroundColor Green
