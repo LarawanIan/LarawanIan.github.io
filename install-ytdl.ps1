@@ -226,6 +226,31 @@ function Install-YTDLP() {
             [Environment]::SetEnvironmentVariable("Path", $envPath, [System.EnvironmentVariableTarget]::Machine)
         }
 
+        Write-Host "Downloading YT-DLP-GUI (GUI for YT-DLP)" -ForegroundColor Yellow
+        # Set download URL and destination folder
+        $downloadUrl = "https://github.com/kannagi0303/yt-dlp-gui/releases/latest/download/yt-dlp-gui.exe"
+        $destFolder = "C:\Tools"
+        $ytDlpPath = Join-Path $destFolder "yt-dlp-gui.exe"
+
+        # Create the destination folder if it doesn't exist
+        if (!(Test-Path $destFolder)) {
+            New-Item -ItemType Directory -Force -Path $destFolder
+        }
+
+        # Download the yt-dlp-gui.exe file
+        Invoke-WebRequest -Uri $downloadUrl -OutFile $ytDlpPath
+
+        # Check if the destination folder is in the PATH
+        $envPath = [Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::Machine)
+        Write-Host "System/Machine Path before (Save this if PATH is cleared for some reason): $envPath"
+        $paths = $envPath.Split(";")
+        if ($paths -notcontains $destFolder) {
+            Write-Host "`nAdding new folder to PATH"
+            # Add the destination folder to the PATH
+            $envPath += ";$destFolder"
+            [Environment]::SetEnvironmentVariable("Path", $envPath, [System.EnvironmentVariableTarget]::Machine)
+        }
+
         # Done!
         Write-Host "`n`nYT-DLP is now installed! You can now close this window if it stays open." -ForegroundColor Green
         Write-Host "Should anything go wrong, your System/Machine PATH is displayed above."
@@ -303,6 +328,10 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 # Remove the downloaded zip file
 Remove-Item -Path $scriptsZipPath -Force
 
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$scriptDirectory\yt-dlp\YT-DLP.lnk")
+$Shortcut.TargetPath = "C:\Tools\yt-dlp-gui.exe"
+$Shortcut.Save()
 
 # Done!
 Write-Host "`n`nYT-DLP Scripts downloaded! You can now close this window if it stays open." -ForegroundColor Green
