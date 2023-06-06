@@ -333,6 +333,9 @@ $Shortcut = $WshShell.CreateShortcut("$scriptDirectory\yt-dlp\YT-DLP.lnk")
 $Shortcut.TargetPath = "C:\Tools\yt-dlp-gui.exe"
 $Shortcut.Save()
 
+$downloadsDirectory = Join-Path -Path $scriptDirectory -ChildPath "yt-dlp\Downloads"
+New-Item -ItemType Directory -Path $downloadsDirectory
+
 # Done!
 Write-Host "`n`nYT-DLP Scripts downloaded! You can now close this window if it stays open." -ForegroundColor Green
 Write-Host "Should anything go wrong, your System/Machine PATH is displayed above."
