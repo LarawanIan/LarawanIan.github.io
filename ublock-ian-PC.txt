@@ -25,6 +25,7 @@ youtube.com##.ytd-guide-entry-renderer.style-scope:has-text(Keyword Inspector):x
 youtube.com##header + div:has-text(Unlock the most advanced growth tools for creators)
 youtube.com##button.comment-templates-dropdown-button
 youtube.com##.vidiq-comment-filter
+
 ! YT Subscriptions Hide Shorts - Grid View
 www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer [overlay-style="SHORTS"]:upward(ytd-grid-video-renderer)
 ! YT Subscriptions Hide Shorts - List View
@@ -35,10 +36,20 @@ youtube.com##ytd-download-button-renderer
 youtube.com###endpoint:has-text(Shorts)
 youtube.com##ytd-rich-section-renderer:has(#title:has-text(Shorts))
 youtube.com##ytd-rich-section-renderer:has(#title:has-text(Breaking news))
+
+!This line removes all the shorts videos. just copy the entire contents and paste it into your extension (including the comments since they start with an exclamation point)
+youtube.com##:xpath(//ytd-rich-item-renderer[descendant::span[contains(@aria-label,"Shorts")]])
+!This part removes the "New Row" object. kind of like removing the new paragraph in word editors.
+youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
+!This part limits the number of videos per row. go ahead and play with the number.
+youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 6 !important;)
+
+
 ! Unnecessary buttons (for me atleast)
 www.youtube.com##.ytp-button.ytp-miniplayer-button
 www.youtube.com##.ytp-button.ytp-remote-button
 www.youtube.com##.ytp-left-controls > .ytp-button.ytp-next-button
+
 ! End Cards YouTube
 www.youtube.com##.ytp-ce-element-show
 ! Change YouTube Default subtitle style
