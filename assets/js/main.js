@@ -2,13 +2,36 @@ $(function () {
 
     "use strict";
 
-    //===== Prealoder
+    //===== Preloader
 
     $(window).on('load', function (event) {
         $('.preloader').delay(500).fadeOut(500);
     });
 
+//===== Copy to Clipboard button
 
+const copyButtons = document.querySelectorAll(".copy-text button");
+
+copyButtons.forEach((button) => {
+  button.addEventListener("click", function() {
+    const copyText = this.closest(".copy-text");
+    const input = copyText.querySelector("code.copytext");
+
+    navigator.clipboard.writeText(input.textContent)
+      .then(() => {
+        copyText.classList.add("active");
+        window.getSelection().removeAllRanges();
+        setTimeout(function() {
+          copyText.classList.remove("active");
+        }, 2500);
+      })
+      .catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+  });
+});
+
+    
     //===== Sticky
 
     $(window).on('scroll', function (event) {
