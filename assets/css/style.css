@@ -1533,16 +1533,23 @@ p {
   border:none;
   outline:none;
 }
+
+.pre-rem {
+ width:100rem;
+ margin:10px 5px -8px 0px;
+}
+
 .copy-text button{
   padding:10px;
   background:#5784f5;
   color:#fff;
-  font-size:18px;
+  font-size:12px;
   float:right;
   border:none;
   outline:none;
   border-radius:10px;
   cursor:pointer;
+  height:25%;
 }
 .copy-text button:active{
   background:#809ce2;

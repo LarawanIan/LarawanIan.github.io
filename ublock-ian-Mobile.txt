@@ -51,6 +51,9 @@ www.nintendolife.com##.ot-sdk-container
 www.nintendo.co.uk##.ot-sdk-container
 www.nintendo.co.uk##.ot-bottom-left.otFloatingFlat
 
+! 2023-07-18 https://t.me
+t.me##.tgme_channel_join_telegram
+
 ! Dangerous Websites
 ||1377x.to
 ||www.1337xxx.to
