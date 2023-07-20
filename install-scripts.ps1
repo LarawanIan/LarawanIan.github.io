@@ -33,40 +33,40 @@ function Copy-FilesToDestination {
 try {
     $ffmpegCommand = Get-Command ffmpeg -ErrorAction Stop
     Write-Host "FFmpeg is already installed. Checking for updates..." -ForegroundColor Yellow
-    choco upgrade ffmpeg
+    choco upgrade ffmpeg -y
 } catch {
     Write-Host "FFmpeg is not installed. Installing..." -ForegroundColor Yellow
-    choco install ffmpeg
+    choco install ffmpeg -y
 }
 
 # Check if yt-dlp is installed
 try {
     $ytDlpCommand = Get-Command yt-dlp -ErrorAction Stop
     Write-Host "YT-DLP is already installed. Checking for updates..." -ForegroundColor Yellow
-    choco upgrade yt-dlp
+    choco upgrade yt-dlp -y
 } catch {
     Write-Host "YT-DLP is not installed. Installing..." -ForegroundColor Yellow
-    choco install yt-dlp
+    choco install yt-dlp -y
 }
 
 # Check if aria2c is installed
 try {
     $ariaCommand = Get-Command aria2c -ErrorAction Stop
     Write-Host "aria2c is already installed. Checking for updates..." -ForegroundColor Yellow
-    choco upgrade aria2
+    choco upgrade aria2 -y
 } catch {
     Write-Host "aria2c is not installed. Installing..." -ForegroundColor Yellow
-    choco install aria2
+    choco install aria2 -y
 }
 
 # Check if scrcpy is installed
 try {
     $ariaCommand = Get-Command scrcpy -ErrorAction Stop
     Write-Host "scrcpy is already installed. Checking for updates..." -ForegroundColor Yellow
-    choco upgrade scrcpy
+    choco upgrade scrcpy -y
 } catch {
     Write-Host "scrcpy is not installed. Installing..." -ForegroundColor Yellow
-    choco install scrcpy
+    choco install scrcpy -y
 }
 
 #---------------------------------------------------------------------------------
