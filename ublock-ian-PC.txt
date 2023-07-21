@@ -152,6 +152,10 @@ wall.alphacoders.com###cookie_consent
 www.nintendolife.com##.ot-fade-in.onetrust-pc-dark-filter
 www.nintendolife.com##.ot-sdk-container
 
+! 2023-07-21 https://www.reddit.com
+www.reddit.com##._2Z-LWN_PrkTncEM_mPuEW5._1tPpYVD73ugqp4k-VMFRki.HNozj_dKjQZ59ZsfEegz8._2tU8R9NTqhvBrhoNAXWWcP._2iuoyPiKHN3kfOoeIQalDT.Z_HUY3BUsGOBOtdmH94ZS._3Wg53T10KuuPmyWOMWsY2F
+www.reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[length\:var\(--rem14\)\].pl-\[length\:var\(--rem10\)\].button-medium
+
 ! 2023-06-03 https://www.nintendo.co.uk
 www.nintendo.co.uk##.ot-sdk-container
 www.nintendo.co.uk##.ot-bottom-left.otFloatingFlat
