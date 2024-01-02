@@ -10,6 +10,8 @@ www.dropbox.com##.dig-Modal-overlay.ReactModal__Overlay--after-open.ReactModal__
 t.me##.tgme_right_column
 t.me##.tgme_widget_message:style(max-width: 150% !important;)
 t.me##.tgme_widget_message_bubble:style(max-width: none !important;)
+t.me##.highlight:style(background: #4b7377 !important;)
+t.me##.tgme_widget_message_service_date:style(margin: 0 0 0 300px !important;)
 
 ! 2022-11-29 Facebook Messages more screen real estate
 www.facebook.com##.x1dt7z5j:style(max-width: 240px !important;)
