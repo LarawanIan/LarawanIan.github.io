@@ -58,6 +58,7 @@ www.nintendo.co.uk##.ot-bottom-left.otFloatingFlat
 
 ! 2023-07-18 https://t.me
 t.me##.tgme_channel_join_telegram
+t.me##.highlight:style(background: #4b7377 !important;)
 
 ! Dangerous Websites
 ||1377x.to
