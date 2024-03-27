@@ -1386,7 +1386,7 @@ p {
 .footer-area {
   background-position: top center;
   position: relative;
-  z-index: 5; }
+  z-index: 1; }
 
 .footer-area::before {
   position: absolute;
@@ -1401,7 +1401,7 @@ p {
   background-size: cover; }
   @media only screen and (min-width: 1921px) {
     .footer-area::before {
-      height: 1120px; } }
+      height: 700px; } }
 
 #particles-2 {
   position: absolute;
@@ -1659,3 +1659,7 @@ p {
     .paraLight{
       color: white !important;
     }
+
+    #accordiontop {
+      z-index: 98;
+  }
