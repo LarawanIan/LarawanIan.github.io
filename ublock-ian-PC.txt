@@ -74,6 +74,8 @@ www.youtube.com##.ytp-left-controls > .ytp-button.ytp-next-button
 www.youtube.com##.ytp-ce-element-show
 ! Change YouTube Default subtitle style
 youtube.com##.ytp-caption-segment:style(background: rgba(8, 8, 8, 0.5)!important; font-size: 22px!important; color: rgb(255, 255, 0)!important; fill: rgb(255, 255, 0)!important; font-family: "Deja Vu Sans Mono", "Lucida Console", Monaco, Consolas, "PT Mono", monospace!important;)
+! Studio Youtube Upload Window Increase Height
+youtube.com###progress-list.ytcp-multiprogress-monitor:style(max-height:400px !important;)
 
 ! 2022-11-22 https://mail.google.com
 mail.google.com##.GR
