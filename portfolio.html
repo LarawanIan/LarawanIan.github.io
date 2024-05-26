@@ -1,0 +1,508 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>Ian's Portfolio</title>
+    <meta name="description" content="Welcome to my portfolio!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://larawanian.github.io/ming.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ian's Portfolio">
+    <meta property="og:description" content="Ian's Portfolio 🎨">
+    <meta property="og:image" content="https://i.imgur.com/reVR5XB.png">
+  
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="larawanian.github.io">
+    <meta property="twitter:url" content="https://larawanian.github.io/ming.html">
+    <meta name="twitter:title" content="Ian's Stuffs">
+    <meta name="twitter:description" content="Ian's Portfolio 🎨">
+    <meta name="twitter:image" content="https://i.imgur.com/reVR5XB.png">
+  
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="icon" type="image/x-icon" href="https://cdn.myportfolio.com/1a898f73-d3a6-40f9-8f7a-27d4ad96111e/e0f7a60b-ea35-490b-babb-898b32761d07_carw_1x1x32.png?h=7b5e307523b971a46ac1fd3cb42d4277">
+        
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+        
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+        
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .hidden {
+            display: none;
+        }
+        .album, .content, .album-section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .album img, .content img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        .album-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Adjust as needed */
+            justify-content: center; /* Center the images horizontally */
+        }
+        .smallalbum-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Adjust as needed */
+            justify-content: center; /* Center the images horizontally */
+        }
+
+        .smallalbum-content img:nth-child(n+1) { 
+            width: 35%; /* 65% smaller */
+            height: auto; 
+        }
+        .mediumalbum-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Adjust as needed */
+            justify-content: center; /* Center the images horizontally */
+        }
+
+        .mediumalbum-content img:nth-child(n+1) { 
+            width: 55%; /* 45% smaller */
+            height: auto; 
+        }
+        .iframe-container {
+            margin-top: 10px;
+            width: 100%;
+        }
+    /* Lightbox styles */
+    .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s;
+            z-index: 1000; /* Add a high z-index to ensure it's on top */
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .lightbox.visible {
+            visibility: visible;
+            opacity: 1;
+        }
+        .lightbox img {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 5px solid #fff;
+            border-radius: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->    
+    
+    <!--====== PRELOADER PART START ======-->
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== HEADER PART START ======-->
+    <header class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.svg" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#resources">Resources</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#donate">Donate</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="techtips.html">Cool Tech Tips</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="troubleshoot.html">Troubleshooting</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+        
+        <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner-bg.svg)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="header-hero-content d-block text-center">
+                            <!--<h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s"></h3>-->
+                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s"><br>IAN LARAWAN</h2>
+                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Welcome to my portfolio<br><br></p><br><br><br>
+                        </div> <!-- header hero content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div id="particles-1" class="particles"></div>
+        </div> <!-- header hero -->
+    </header>
+    <!--====== HEADER PART ENDS ======-->
+    
+    <!--====== SERVICES PART START ======-->
+    <section class="bg-darker-tg" id="mingming">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div id="accordiontop" class="col-lg-9 text-white">
+                    <main class="bd-main order-1 center">
+                        <div id="albums">
+                            <div class="album" onclick="showContent(2)">
+                                <p>Personal Art</p>
+                                <img src="https://i.imgur.com/NwE5MJW.png" alt="Album 2">
+                            </div>
+                            <div class="album" onclick="showContent(1)">
+                                <p>ADV 3101 Finals - Dream Project</p>
+                                <img src="https://i.imgur.com/kSAz1DB.jpeg" alt="Album 1">
+                            </div>
+                            <div class="album" onclick="showContent(5)">
+                                <p>Red Cross Youth</p>
+                                <img src="https://i.imgur.com/DJuSg65.jpeg" alt="Album 1">
+                            </div>
+                            <div class="album" onclick="showContent(4)">
+                                <p>Graphic Design/Layout Work</p>
+                                <img src="https://i.imgur.com/wOgiCLL.png" alt="Album 1">
+                            </div>
+                            <div class="album" onclick="showContent(3)">
+                                <p>Art Commissions</p>
+                                <img src="https://i.imgur.com/UGbiC92.png" alt="Album 3">
+                            </div>
+                        </div>
+                        <div id="content" class="content hidden">
+                            <button onclick="showAlbums()" class="btn btn-primary mb-3">Back to Albums</button>
+                            <div id="album1" class="hidden">
+                                <img src="https://i.imgur.com/kSAz1DB.jpeg" alt="Image 1" onclick="showLightbox(this.src)">
+                                <br><br>
+                                <div class="smallalbum-content">
+                                    <img src="https://i.imgur.com/asLt75H.png" alt="Image 2" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/24yx3hd.png" alt="Image 3" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/iT748Ld.png" alt="Image 4" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/nkyVMud.png" alt="Image 5" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/NXdzLlv.jpg" alt="Image 6" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/EUhn0YB.jpg" alt="Image 7" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/QHwlWd8.jpg" alt="Image 8" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/xQbNupt.jpg" alt="Image 9" onclick="showLightbox(this.src)">
+                                </div>
+                                <div class="iframe-container">
+                                    <br><iframe loading="lazy" width="420" height="315"
+                                       src="https://www.youtube.com/embed/gb0hv_Cao-E">
+                                    Your browser does not support the iframe tag.
+                                    </iframe> 
+                                </div>
+                                <div class="iframe-container">
+                                    <br><iframe loading="lazy" width="420" height="315"
+                                       src="https://www.youtube.com/embed/FW03gR5_9HA">
+                                    Your browser does not support the iframe tag.
+                                    </iframe> 
+                                </div>
+                                <div class="iframe-container">
+                                    <br><iframe loading="lazy" width="420" height="315"
+                                       src="https://www.youtube.com/embed/-v_6QzpUMok">
+                                    Your browser does not support the iframe tag.
+                                    </iframe> 
+                                </div>
+                            </div>
+                            <div id="album2" class="hidden">
+                                <div class="album-content">
+                                <div class="smallalbum-content">
+                                    <img src="https://i.imgur.com/NwE5MJW.png" alt="Image 0" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/VXD7AOt.jpeg" alt="Image 1" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/OFw8Jr2.png" alt="Image 2" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/UyDtccR.png" alt="Image 3" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/WKC9ips.png" alt="Image 4" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/3G1BWvy.png" alt="Image 5" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/neTqdMa.png" alt="Image 6" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/OX7ruZ3.jpg" alt="Image 7" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/3CHOLBP.png" alt="Image 8" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/uyLxcDu.jpeg" alt="Image 9" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/1FMN8Lp.png" alt="Image 10" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/A1kVUYa.png" alt="Image 11" onclick="showLightbox(this.src)">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="album3" class="hidden">
+                            <img src="https://i.imgur.com/Ggn18Ms.jpeg" alt="Image 1" onclick="showLightbox(this.src)">
+                                <br><br>
+                                <div class="smallalbum-content">
+                                    <img src="https://i.imgur.com/ESoj4BE.jpeg" alt="Image 2" onclick="showLightbox(this.src)">
+                                </div><br>
+                                <div class="smallalbum-content">
+                                    <img src="https://i.imgur.com/6LxBf3h.png" alt="Image 3" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/9UhNJO3.png" alt="Image 4" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/raNzvDu.png" alt="Image 5" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/mhEIrly.png" alt="Image 6" onclick="showLightbox(this.src)">
+                                </div>
+                        </div>
+                        <div id="album4" class="hidden">
+                                <div class="mediumalbum-content">
+                                    <img src="https://i.imgur.com/wOgiCLL.png" alt="Image 1" onclick="showLightbox(this.src)">
+                                </div><br>
+                                <div class="smallalbum-content">
+                                    <img src="https://i.imgur.com/LSQmmVD.jpeg" alt="Image 4" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/SzenJsW.jpeg" alt="Image 5" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/lhTkrtS.jpeg" alt="Image 6" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/w8nggN7.jpeg" alt="Image 7" onclick="showLightbox(this.src)">
+                                </div><br>
+                                <div class="mediumalbum-content">
+                                    <img src="https://i.imgur.com/nlJE3P8.jpeg" alt="Image 8" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/U2PWnoc.jpeg" alt="Image 9" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/ScQ62uH.jpeg" alt="Image 10" onclick="showLightbox(this.src)">
+                                </div><br>
+                                <div class="smallalbum-content">
+                                    <img src="https://i.imgur.com/BrgDpj5.jpeg" alt="Image 11" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/Ts4mWBc.jpeg" alt="Image 12" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/cqslFh7.jpeg" alt="Image 13" onclick="showLightbox(this.src)">
+                                    <img src="https://i.imgur.com/UR6ieSK.jpeg" alt="Image 14" onclick="showLightbox(this.src)">
+                                </div>
+                        </div>
+                        <div id="album5" class="hidden">
+                            <img src="https://i.imgur.com/gXP3fwL.jpeg" alt="Image 1" onclick="showLightbox(this.src)">
+                            <br><br>
+                            <div class="smallalbum-content">
+                                <img src="https://i.imgur.com/ZLzVqSy.jpeg" alt="Image 2" onclick="showLightbox(this.src)">
+                                <img src="https://i.imgur.com/tS3LFxH.jpeg" alt="Image 3" onclick="showLightbox(this.src)">
+                                <img src="https://i.imgur.com/4ht8pgT.jpeg" alt="Image 4" onclick="showLightbox(this.src)">
+                                <img src="https://i.imgur.com/Xfky7ee.jpeg" alt="Image 5" onclick="showLightbox(this.src)">
+                                <img src="https://i.imgur.com/twu0ffO.jpeg" alt="Image 6" onclick="showLightbox(this.src)">
+                                <img src="https://i.imgur.com/pL6g2fu.jpeg" alt="Image 7" onclick="showLightbox(this.src)">
+                                <img src="https://i.imgur.com/W670huY.png" alt="Image 8" onclick="showLightbox(this.src)">
+                                <img src="https://i.imgur.com/OInDyVM.jpeg" alt="Image 9" onclick="showLightbox(this.src)">
+                        </div>
+                    </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox" onclick="hideLightbox()">
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+
+    <!--====== FOOTER PART START ======-->
+    <footer id="footer" class="footer-area pt-120">
+        <div class="container">
+            <div class="footer-widget pb-100">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <a class="logo" href="#">
+                                <img src="assets/images/logo.svg" alt="logo">
+                            </a>
+                            <p class="text">Contacts:</p>
+                            <ul class="social">
+                                <li><a href="https://discord.com/users/161008692458815488"><i class="fa-brands fa-discord"></i></a></li>
+                                <li><a href="https://twitter.com/SohfKohk"><i class="lni-twitter-filled"></i></a></li>
+                                <li><a href="https://instagram.com/ianlarawan"><i class="lni-instagram-filled"></i></a></li>
+                                <li><a href="https://reddit.com/u/mew2ian"><i class="fa-brands fa-reddit-alien"></i></i></a></li>
+                                <li><a href="https://t.me/SockMedic"><i class="fa-brands fa-telegram"></i></i></i></a></li>
+                            </ul>
+                        </div> <!-- footer about -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer widget -->
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright d-sm-flex justify-content-between">
+                            <div class="copyright-content">
+                                <p class="text">You have reached the end of my stuffs(I'm stuffs) <a class="text" href="index.html">🏠</a></p>
+                            </div> <!-- copyright content -->
+                        </div> <!-- copyright -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer copyright -->
+        </div> <!-- container -->
+    </footer>
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+    <!--====== BACK TOP TOP PART ENDS ======-->   
+    
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!--====== Plugins js ======-->
+    <script src="assets/js/plugins.js"></script>
+    
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+    
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+    
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!--====== FontAwesome ======-->
+    <script src="https://kit.fontawesome.com/f48a208d1f.js" crossorigin="anonymous"></script>
+    
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+    
+    <!--====== Particles js ======-->
+    <script src="assets/js/particles.min.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+
+let albumImages = [];
+let currentImageIndex = 0;
+
+function showContent(albumId) {
+    document.getElementById('albums').classList.add('hidden');
+    document.getElementById('content').classList.remove('hidden');
+
+    // Clear previously displayed album content
+    const albums = document.querySelectorAll('#content > div');
+    albums.forEach(album => album.classList.add('hidden'));
+
+    document.getElementById('album' + albumId).classList.remove('hidden');
+
+    // Set up images for the selected album
+    setupAlbumImages(albumId); 
+
+    // Scroll to top of album
+    document.getElementById('accordiontop').scrollIntoView({ behavior: 'smooth' });
+}
+
+
+function setupAlbumImages(albumId) {
+    const album = document.getElementById('album' + albumId);
+    const images = album.querySelectorAll('.album-content img');
+
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            showLightbox(this.src);
+        });
+    });
+}
+
+function showAlbums() {
+    document.getElementById('content').classList.add('hidden');
+    document.getElementById('albums').classList.remove('hidden');
+}
+
+function showLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = src;
+    lightbox.classList.add('visible');
+    currentImageIndex = albumImages.indexOf(src); 
+}
+
+function hideLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('visible');
+}
+
+// Inside the lightbox div, add an event listener to prevent propagation
+const lightbox = document.getElementById('lightbox');
+lightbox.addEventListener('click', hideLightbox);
+
+    </script>
+</body>
+
+</html>
