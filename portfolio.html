@@ -224,7 +224,7 @@
     <!--====== HEADER PART ENDS ======-->
     
     <!--====== SERVICES PART START ======-->
-    <section class="bg-darker-tg" id="mingming">
+    <section class="bg-darker-tg" id="portfoliosection">
         <div class="container px-4">
             <div class="row gx-4 justify-content-center">
                 <div id="accordiontop" class="col-lg-9 text-white">
@@ -636,6 +636,13 @@ function hideLightbox() {
 // Inside the lightbox div, add an event listener to prevent propagation
 const lightbox = document.getElementById('lightbox');
 lightbox.addEventListener('click', hideLightbox);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll("#portfoliosection img");
+    images.forEach(img => {
+        img.setAttribute("loading", "lazy");
+    });
+});
 
     </script>
 </body>
