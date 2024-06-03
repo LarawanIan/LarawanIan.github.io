@@ -1,0 +1,151 @@
+.hidden {
+    display: none;
+}
+
+.albumheader {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.album, .content, .album-section {
+    margin: 20px auto; /* Added '20' to the margin */
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.album img, .content img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.album-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust as needed */
+    justify-content: center; /* Center the images horizontally */
+}
+.smallalbum-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust as needed */
+    justify-content: center; /* Center the images horizontally */
+}
+
+.smallalbum-content img:nth-child(n+1) { 
+    width: 35%; /* 65% smaller */
+    height: auto; 
+}
+.mediumalbum-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust as needed */
+    justify-content: center; /* Center the images horizontally */
+}
+
+.mediumalbum-content img:nth-child(n+1) { 
+    width: 55%; /* 45% smaller */
+    height: auto; 
+}
+.iframe-container {
+    margin-top: 10px;
+    width: 100%;
+}
+/* Lightbox styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    z-index: 1000; /* Add a high z-index to ensure it's on top */
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.lightbox.visible {
+    visibility: visible;
+    opacity: 1;
+}
+.lightbox img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+
+/* Album Grid CSS starts here*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.album {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.album img {
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; /* Center horizontally and vertically */
+}
+
+.album h3 {
+    margin: 8px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Content centering */
+.content {
+    text-align: center; /* This line centers the content within the .content div */
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+    .album-grid {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .album-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 901px) {
+    .album-grid {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    }
+}

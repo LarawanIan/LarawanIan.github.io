@@ -55,90 +55,11 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--====== Portfolio Album CSS ======-->
+    <link rel="stylesheet" href="assets/css/album.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
     
-    <style>
-        .hidden {
-            display: none;
-        }
-        .album, .content, .album-section {
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .album img, .content img {
-            width: 100%;
-            height: auto;
-            cursor: pointer;
-        }
-        .album-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px; /* Adjust as needed */
-            justify-content: center; /* Center the images horizontally */
-        }
-        .smallalbum-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px; /* Adjust as needed */
-            justify-content: center; /* Center the images horizontally */
-        }
-
-        .smallalbum-content img:nth-child(n+1) { 
-            width: 35%; /* 65% smaller */
-            height: auto; 
-        }
-        .mediumalbum-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px; /* Adjust as needed */
-            justify-content: center; /* Center the images horizontally */
-        }
-
-        .mediumalbum-content img:nth-child(n+1) { 
-            width: 55%; /* 45% smaller */
-            height: auto; 
-        }
-        .iframe-container {
-            margin-top: 10px;
-            width: 100%;
-        }
-    /* Lightbox styles */
-    .lightbox {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s, opacity 0.3s;
-            z-index: 1000; /* Add a high z-index to ensure it's on top */
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-        }
-        .lightbox.visible {
-            visibility: visible;
-            opacity: 1;
-        }
-        .lightbox img {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border: 5px solid #fff;
-            border-radius: 10px;
-        }
-        .hidden {
-            display: none;
-        }
-    </style>
-    </style>
 </head>
 
 <body>
@@ -213,7 +134,7 @@
                         <div class="header-hero-content d-block text-center">
                             <!--<h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s"></h3>-->
                             <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s"><br>IAN LARAWAN</h2>
-                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Welcome to my portfolio<br><br></p><br><br><br>
+                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s" style="font-family: 'Lato', sans-serif;">Welcome to my portfolio<br><br></p><br><br><br>
                         </div> <!-- header hero content -->
                     </div>
                 </div> <!-- row -->
@@ -227,44 +148,43 @@
     <section class="bg-darker-tg" id="portfoliosection">
         <div class="container px-4">
             <div class="row gx-4 justify-content-center">
-                <div id="accordiontop" class="col-lg-9 text-white">
-                    <main class="bd-main order-1 center">
-                        <div id="albums">
+                <div id="accordiontop" class="col-lg-12 text-white">
+                        <div id="albums" class="album-grid">
                             <div class="album" onclick="showContent(2)">
-                                <p style="text-align: center; font-size: 20px; font-weight: 700;">Personal Art</p><br>
-                                <img src="https://i.imgur.com/NwE5MJW.png" alt="Album 2">
+                                <p class="albumheader">Personal Art</p><br>
+                                <img src="https://i.imgur.com/NwE5MJW.png" alt="Album 2" class="lazyload">
                             </div>
                             <div class="album" onclick="showContent(1)">
-                                <p style="text-align: center; font-size: 20px; font-weight: 700;">ADV 3101 Finals - Dream Project</p><br>
-                                <img src="https://i.imgur.com/kSAz1DB.jpeg" alt="Album 1">
+                                <p class="albumheader">ADV 3101 Dream Project</p><br>
+                                <img src="https://i.imgur.com/S2afryJ.jpeg" alt="Album 1" class="lazyload">
                             </div>
                             <div class="album" onclick="showContent(8)">
-                                <p style="text-align: center; font-size: 20px; font-weight: 700;">ADV 3204 Finals</p><br>
-                                <img src="https://i.imgur.com/8l9gLyS.jpeg" alt="Album 1">
+                                <p class="albumheader">ADV 3204 Finals</p><br>
+                                <img src="https://i.imgur.com/82EhQ5z.jpeg" alt="Album 8" class="lazyload">
                             </div>
                             <div class="album" onclick="showContent(5)">
-                                <p style="text-align: center; font-size: 20px; font-weight: 700;">Red Cross Youth</p><br>
-                                <img src="https://i.imgur.com/DJuSg65.jpeg" alt="Album 5">
+                                <p class="albumheader">Red Cross Youth</p><br>
+                                <img src="https://i.imgur.com/ul3GYNq.jpeg" alt="Album 5" class="lazyload">
                             </div>
                             <div class="album" onclick="showContent(4)">
-                                <p style="text-align: center; font-size: 20px; font-weight: 700;">Graphic Design/Layout Work</p><br>
-                                <img src="https://i.imgur.com/wOgiCLL.png" alt="Album 4">
+                                <p class="albumheader">Graphic Design/Layout Work</p><br>
+                                <img src="https://i.imgur.com/wOgiCLL.png" alt="Album 4" class="lazyload">
                             </div>
                             <div class="album" onclick="showContent(7)">
-                                <p style="text-align: center; font-size: 20px; font-weight: 700;">Digital Design School Work</p><br>
-                                <img src="https://i.imgur.com/fDpzMez.jpeg" alt="Album 6">
+                                <p class="albumheader">Digital Design School Work</p><br>
+                                <img src="https://i.imgur.com/7APXI9k.jpeg" alt="Album 7" class="lazyload">
                             </div>
                             <div class="album" onclick="showContent(6)">
-                                <p style="text-align: center; font-size: 20px; font-weight: 700;">Other School Work</p><br>
-                                <img src="https://i.imgur.com/Ho2dckR.jpeg" alt="Album 6">
+                                <p class="albumheader">Other School Work</p><br>
+                                <img src="https://i.imgur.com/HvvTMfp.jpeg" alt="Album 6" class="lazyload">
                             </div>
                             <div class="album" onclick="showContent(3)">
-                                <p style="text-align: center; font-size: 20px; font-weight: 700;">Art Commissions</p><br>
-                                <img src="https://i.imgur.com/UGbiC92.png" alt="Album 3">
+                                <p class="albumheader">Art Commissions</p><br>
+                                <img src="https://i.imgur.com/rY0fOh6.jpeg" alt="Album 3" class="lazyload">
                             </div>
                         </div>
                         <div id="content" class="content hidden">
-                            <button onclick="showAlbums()" class="btn btn-primary mb-3">Back to Albums</button>
+                            <button onclick="showAlbums()" class="btn btn-primary mb-3 col-lg-12">Close</button>
                             <div id="album1" class="hidden">
                                 <img src="https://i.imgur.com/kSAz1DB.jpeg" alt="Image 1" onclick="showLightbox(this.src)">
                                 <br><br>
@@ -367,7 +287,7 @@
                             </div>
                         </div>
                         <div id="album6" class="hidden">
-                            <p style="text-align: center; font-size: 20px; font-weight: 700;">AA 1st Year - FAD 1201 Creative Output</p><br>
+                            <p class="albumheader">AA 1st Year - FAD 1201 Creative Output</p><br>
                             <img src="https://i.imgur.com/bZ9zuTY.jpeg" alt="FAD1201 CreativeOutput 1" onclick="showLightbox(this.src)">
                             <br><br>
                             <div class="smallalbum-content">
@@ -386,7 +306,7 @@
                                 Your browser does not support the iframe tag.
                                 </iframe> 
                             </div><br>
-                            <p style="text-align: center; font-size: 20px; font-weight: 700;">AA 1st Year - FAD 1204 Vision Boards</p><br>
+                            <p class="albumheader">AA 1st Year - FAD 1204 Vision Boards</p><br>
                             <div class="smallalbum-content">
                                 <img src="https://i.imgur.com/xuvEl3d.jpg" alt="FAD1204 VISION BOARD 1" onclick="showLightbox(this.src)">
                                 <img src="https://i.imgur.com/UIvdvii.jpg" alt="FAD1204 VISION BOARD 2" onclick="showLightbox(this.src)">
@@ -395,12 +315,12 @@
                                 <img src="https://i.imgur.com/ZorcRaf.jpg" alt="FAD1204 VISION BOARD 5" onclick="showLightbox(this.src)">
                                 <img src="https://i.imgur.com/B3pA7o7.jpg" alt="FAD1204 VISION BOARD 6" onclick="showLightbox(this.src)">
                             </div><br>
-                            <p style="text-align: center; font-size: 20px; font-weight: 700;">AA 2nd Year - FAD 2200</p><br>
+                            <p class="albumheader">AA 2nd Year - FAD 2200</p><br>
                             <div class="smallalbum-content">
                                 <img src="https://i.imgur.com/tI6xXIw.jpg" alt="FAD 2200 1" onclick="showLightbox(this.src)">
                                 <img src="https://i.imgur.com/xybN4O0.jpg" alt="FAD 2200 2" onclick="showLightbox(this.src)">
                             </div><br>
-                            <p style="text-align: center; font-size: 20px; font-weight: 700;">AA 2nd-3rd Year - Production Techniques 1-2</p><br>
+                            <p class="albumheader">AA 2nd-3rd Year - Production Techniques 1-2</p><br>
                             <div class="mediumalbum-content">
                                 <img src="https://i.imgur.com/LghQJDy.jpg" alt="ProdTech1" onclick="showLightbox(this.src)">
                                 <img src="https://i.imgur.com/1m2okw1.jpg" alt="ProdTech2a" onclick="showLightbox(this.src)">
@@ -408,7 +328,7 @@
                             </div><br>
                         </div>
                         <div id="album7" class="hidden">
-                            <p style="text-align: center; font-size: 20px; font-weight: 700;">AA 2nd Year - ADV 2101</p><br>
+                            <p class="albumheader">AA 2nd Year - ADV 2101</p><br>
                             <div class="mediumalbum-content">
                                 <img src="https://i.imgur.com/gROGry1.jpeg" alt="ADV 2101 1" onclick="showLightbox(this.src)">
                                 <img src="https://i.imgur.com/UIkZDuO.jpeg" alt="ADV 2101 2" onclick="showLightbox(this.src)">
@@ -431,7 +351,7 @@
                                 <img src="https://i.imgur.com/LTK6FAZ.png" alt="ADV 2101 13" onclick="showLightbox(this.src)">
                                 <img src="https://i.imgur.com/23kcVPH.png" alt="ADV 2101 14" onclick="showLightbox(this.src)">
                             </div><br>
-                            <p style="text-align: center; font-size: 20px; font-weight: 700;">AA 3rd Year - ADV 3101 - Meals to Mars</p><br>
+                            <p class="albumheader">AA 3rd Year - ADV 3101 - Meals to Mars</p><br>
                             <img src="https://i.imgur.com/HGsMx0T.jpg" alt="ADV 3101 M2M 1" onclick="showLightbox(this.src)"><br><br>
                             <div class="smallalbum-content">
                                 <img src="https://i.imgur.com/B6Z4zVM.jpg" alt="ADV 3101 M2M Render1" onclick="showLightbox(this.src)">
@@ -441,13 +361,13 @@
                                 <img src="https://i.imgur.com/Cn4NgJI.jpg" alt="ADV 3101 M2M Bar1" onclick="showLightbox(this.src)">
                                 <img src="https://i.imgur.com/XHuqM4h.jpg" alt="ADV 3101 M2M Bar2" onclick="showLightbox(this.src)">
                             </div><br>
-                            <p style="text-align: center; font-size: 20px; font-weight: 700;">AA 3rd Year - ADV 3201 - Water You Drinking</p><br>
+                            <p class="albumheader">AA 3rd Year - ADV 3201 - Water You Drinking</p><br>
                             <img src="https://i.imgur.com/Bf3weDm.jpeg" alt="ADV 3201 WYD" onclick="showLightbox(this.src)"><br><br>
                             <div class="mediumalbum-content">
                                 <img src="https://i.imgur.com/cVqeKGR.jpeg" alt="ADV 3101 WYD Render1" onclick="showLightbox(this.src)">
                                 <img src="https://i.imgur.com/YaStExe.jpeg" alt="ADV 3101 WYD Render2" onclick="showLightbox(this.src)">
                             </div><br>
-                            <p style="text-align: center; font-size: 20px; font-weight: 700;">AA 3rd Year - ADV 3201 - Brand of the Future</p><br>
+                            <p class="albumheader">AA 3rd Year - ADV 3201 - Brand of the Future</p><br>
                             <img src="https://i.imgur.com/iIfVhZU.png" alt="ADV 3201 BotF" onclick="showLightbox(this.src)"><br><br>
                             <div class="smallalbum-content">
                                 <img src="https://i.imgur.com/LrYd8eX.png" alt="ADV 3101 BotF Render1" onclick="showLightbox(this.src)">
@@ -489,6 +409,7 @@
                             </div>
                         </div>
                     </main>
+                    <br><button onclick="showAlbums()" class="btn btn-primary mb-3 col-lg-12">Close</button>
                 </div>
             </div>
         </div>
@@ -581,70 +502,7 @@
     <script src="assets/js/main.js"></script>
 
     <!-- Custom JS -->
-    <script>
-
-let albumImages = [];
-let currentImageIndex = 0;
-
-function showContent(albumId) {
-    document.getElementById('albums').classList.add('hidden');
-    document.getElementById('content').classList.remove('hidden');
-
-    // Clear previously displayed album content
-    const albums = document.querySelectorAll('#content > div');
-    albums.forEach(album => album.classList.add('hidden'));
-
-    document.getElementById('album' + albumId).classList.remove('hidden');
-
-    // Set up images for the selected album
-    setupAlbumImages(albumId); 
-
-    // Scroll to top of album
-    document.getElementById('accordiontop').scrollIntoView({ behavior: 'smooth' });
-}
-
-
-function setupAlbumImages(albumId) {
-    const album = document.getElementById('album' + albumId);
-    const images = album.querySelectorAll('.album-content img');
-
-    images.forEach(img => {
-        img.addEventListener('click', function() {
-            showLightbox(this.src);
-        });
-    });
-}
-
-function showAlbums() {
-    document.getElementById('content').classList.add('hidden');
-    document.getElementById('albums').classList.remove('hidden');
-}
-
-function showLightbox(src) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    lightboxImg.src = src;
-    lightbox.classList.add('visible');
-    currentImageIndex = albumImages.indexOf(src); 
-}
-
-function hideLightbox() {
-    const lightbox = document.getElementById('lightbox');
-    lightbox.classList.remove('visible');
-}
-
-// Inside the lightbox div, add an event listener to prevent propagation
-const lightbox = document.getElementById('lightbox');
-lightbox.addEventListener('click', hideLightbox);
-
-document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll("#portfoliosection img");
-    images.forEach(img => {
-        img.setAttribute("loading", "lazy");
-    });
-});
-
-    </script>
+    <script src="assets/js/album.js"></script>
 </body>
 
 </html>
