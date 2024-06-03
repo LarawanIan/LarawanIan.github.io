@@ -82,7 +82,6 @@ mail.google.com##.GR
 
 ! 2022 Steam
 steamcommunity.com###floatMoney
-steamcommunity.com##.tradePanel:has-text(SIH's Sponsors)
 
 ! 2023-06-29 https://www.whatfontis.com
 www.whatfontis.com###b27f597d4ce5e4579cdce
@@ -157,6 +156,13 @@ www.reddit.com##.justify-center.items-center.flex.button.button-secondary.pr-\[l
 ! 2023-06-03 https://www.nintendo.co.uk
 www.nintendo.co.uk##.ot-sdk-container
 www.nintendo.co.uk##.ot-bottom-left.otFloatingFlat
+
+! 2023-08-14 https://twitter.com
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(3)
+
+! 2023-10-14 https://docs.google.com
+docs.google.com##.docs-dialog.modal-dialog
+docs.google.com##.modal-dialog-bg
 
 ! Dangerous Websites
 ||1377x.to
