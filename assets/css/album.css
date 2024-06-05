@@ -9,7 +9,7 @@
 }
 
 .album, .content, .album-section {
-    margin: 20px auto; /* Added '20' to the margin */
+    margin: auto; /* Added '20' to the margin */
     max-width: 800px;
     padding: 20px;
     background: white;
