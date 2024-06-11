@@ -68,3 +68,15 @@ document.addEventListener("DOMContentLoaded", function() {
         img.setAttribute("loading", "lazy");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const iconContainers = document.querySelectorAll(".designappicon"); // Select all elements with the class
+  
+    iconContainers.forEach(container => {
+      const images = container.querySelectorAll("img"); // Select images within each container
+  
+      images.forEach(img => {
+        img.setAttribute("style", "width: 50px; height: 50px;"); // Set inline styles
+      });
+    });
+  });
