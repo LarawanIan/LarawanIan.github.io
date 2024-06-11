@@ -8,6 +8,19 @@
     font-weight: 600;
 }
 
+.albumapps {
+    text-align: center;
+    font-size: 12px;
+}
+
+.designappicon {
+    display: flex;
+    height: 50px; /* Adjust if needed for all images to fit vertically */
+    margin: 5px auto; /* Centers the image horizontally */
+    gap: 10px; /* Adjust as needed for spacing between icons */
+    justify-content: center; /* Centers the icons horizontally within the container */
+  }
+
 .album, .content, .album-section {
     margin: auto; /* Added '20' to the margin */
     max-width: 800px;
