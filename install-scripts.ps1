@@ -30,6 +30,17 @@ function Copy-FilesToDestination {
 
 #---------------------------------------------------------------------------------
 
+# Check for chocolatey updates
+try {
+    $chocoCommand = Get-Command choco -ErrorAction Stop
+    Write-Host "Chocolatey is already installed. Checking for updates..." -ForegroundColor Yellow
+    choco upgrade chocolatey -y
+} catch {
+    Write-Host "Chocolatey is not installed. Installing..." -ForegroundColor Yellow
+    choco install chocolatey -y
+}
+
+# Check if ffmpeg is installed
 try {
     $ffmpegCommand = Get-Command ffmpeg -ErrorAction Stop
     Write-Host "FFmpeg is already installed. Checking for updates..." -ForegroundColor Yellow
